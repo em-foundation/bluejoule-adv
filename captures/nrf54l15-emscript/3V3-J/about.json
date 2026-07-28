@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-emscript.md",
+        "title": "Nordic nRF54L15 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-J",
+        "subtitle": "Bench supply · 3V3",
+        "device": "JS220",
+        "created": "2025-10-22T23:28:23.933Z",
+        "generated": "2026-07-28T23:41:53.976Z",
+        "avg_voltage": 3.2844811486609577,
+        "event_image": "event-A.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.000002895972271986125,
+        "current_std": 0.000001027095820925976,
+        "power_avg": 0.00000951176633438327
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000016505740761485208,
+            "energy_per_period": 0.00002601750709586848,
+            "energy_per_day": 2.2479126130830367,
+            "emeralds": 35.58857205319878
+        },
+        "ten_seconds": {
+            "event_energy": 0.000016505740761485208,
+            "energy_per_period": 0.00011162340410531792,
+            "energy_per_day": 0.9644262114699469,
+            "emeralds": 82.95087695518625
+        }
+    }
+}
