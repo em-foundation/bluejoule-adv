@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 3V0</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-07-28 @ 17:51:56</sub></p>
+<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-07-28 @ 18:24:41</sub></p>
 
 ## Platform
 
@@ -26,7 +26,7 @@
 - [nRF54L15 product page](https://www.nordicsemi.com/Products/nRF54L15)
 - [nRF54L15 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK)
 - [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK)
-- [BUILD ARTIFACTS](../build) &thinsp;⚙️
+- [BUILD ARTIFACTS](../build)
 
 
 ## EM&bull;Scope results · JS220
