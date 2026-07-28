@@ -1,0 +1,65 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-zephyr-retain16k.md",
+        "title": "Nordic nRF54L15 DK · Zephyr · NCS 3.1.1 · Retain 16 KB",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software stack: Zephyr",
+            "nRF Connect SDK: 3.1.1",
+            "Toolchain: nRF Connect SDK Toolchain 3.1.1",
+            "Advertising mode: legacy non-connectable broadcaster",
+            "Retained SRAM: 16 KB",
+            "SRAM base address: `0x2003C000`",
+            "RRAM low-power power-off: enabled",
+            "Serial and console support: disabled",
+            "Thread and system stack sizes: reduced for this benchmark configuration"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "nRF Connect SDK",
+                "url": "https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V0-P",
+        "subtitle": "Bench supply · 3V0",
+        "device": "PPK2",
+        "created": "2025-11-27T12:23:45.319Z",
+        "generated": "2026-07-28T20:52:59.841Z",
+        "avg_voltage": 3,
+        "event_image": "event-A.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.000001000172714768155,
+        "current_std": 6.073424564750556e-7,
+        "power_avg": 0.0000030005181443044652
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000016998886028704025,
+            "energy_per_period": 0.00001999940417300849,
+            "energy_per_day": 1.7279485205479335,
+            "emeralds": 46.297675566533634
+        },
+        "ten_seconds": {
+            "event_energy": 0.000016998886028704025,
+            "energy_per_period": 0.000047004067471748674,
+            "energy_per_day": 0.40611514295590856,
+            "emeralds": 196.98846838785695
+        }
+    }
+}

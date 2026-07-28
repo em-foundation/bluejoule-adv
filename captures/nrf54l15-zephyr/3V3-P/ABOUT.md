@@ -1,10 +1,10 @@
 <!-- GENERATED FILE — DO NOT EDIT -->
 
 <h1 align="center">Nordic nRF54L15 DK · Zephyr · NCS 3.0.2</h1>
-<h3 align="center">Bench supply · 3V0</h3>
+<h3 align="center">Bench supply · 3V3</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-07-28 @ 20:52:51</sub></p>
+<p align="right"><sub>captured on 2025-09-07 @ 17:26:37<br>generated on 2026-07-28 @ 20:52:53</sub></p>
 
 ## Platform
 
@@ -29,25 +29,25 @@
 - [BUILD ARTIFACTS](../build)
 
 
-## EM&bull;Scope results · JS220
+## EM&bull;Scope results · PPK2
 
 ### 🟠&ensp;sleep
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 3.0 V |  2.8 µA |  1.0 µA |  8.2 µW |
+| 3.3 V |  3.4 µA |  0.7 µA | 11.2 µW |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|
-| 16.4 µJ | 24.6 µJ |  2.1 J | 37.64 |
+| 18.2 µJ | 29.4 µJ |  2.5 J | 31.51 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|
-| 16.4 µJ | 98.8 µJ |  0.9 J | 93.76 |
+| 18.2 µJ | 130.3 µJ |  1.1 J | 71.04 |
 
 ## Typical Event
 

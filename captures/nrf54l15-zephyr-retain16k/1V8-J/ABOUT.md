@@ -1,10 +1,10 @@
 <!-- GENERATED FILE — DO NOT EDIT -->
 
-<h1 align="center">Nordic nRF54L15 DK · Zephyr · NCS 3.0.2</h1>
-<h3 align="center">Bench supply · 3V0</h3>
+<h1 align="center">Nordic nRF54L15 DK · Zephyr · NCS 3.1.1 · Retain 16 KB</h1>
+<h3 align="center">Bench supply · 1V8</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-07-28 @ 20:52:51</sub></p>
+<p align="right"><sub>captured on 2025-11-30 @ 00:42:44<br>generated on 2026-07-28 @ 20:52:55</sub></p>
 
 ## Platform
 
@@ -14,12 +14,14 @@
 - SRAM: 256 KB
 - Board: Nordic nRF54L15 DK
 - Software stack: Zephyr
-- nRF Connect SDK: 3.0.2
-- Toolchain: nRF Connect SDK Toolchain 3.0.2
-- Retained SRAM: default configuration
-- LF clock source: ...
-- DC-DC converter: enabled
-- Compiler optimization: ...
+- nRF Connect SDK: 3.1.1
+- Toolchain: nRF Connect SDK Toolchain 3.1.1
+- Advertising mode: legacy non-connectable broadcaster
+- Retained SRAM: 16 KB
+- SRAM base address: `0x2003C000`
+- RRAM low-power power-off: enabled
+- Serial and console support: disabled
+- Thread and system stack sizes: reduced for this benchmark configuration
 
 ### References
 
@@ -35,21 +37,21 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 3.0 V |  2.8 µA |  1.0 µA |  8.2 µW |
+| 1.8 V |  2.2 µA |  0.9 µA |  4.0 µW |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|
-| 16.4 µJ | 24.6 µJ |  2.1 J | 37.64 |
+| 15.8 µJ | 19.7 µJ |  1.7 J | 46.92 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|
-| 16.4 µJ | 98.8 µJ |  0.9 J | 93.76 |
+| 15.8 µJ | 55.3 µJ |  0.5 J | 167.46 |
 
 ## Typical Event
 
-<p align="center"><img src="event-B.png" alt="Event" width="900"></p>
+<p align="center"><img src="event-A.png" alt="Event" width="900"></p>
 
