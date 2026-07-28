@@ -32,32 +32,32 @@
         ]
     },
     "capture": {
-        "name": "3V0-J",
-        "subtitle": "Bench supply · 3V0",
+        "name": "1V8-J",
+        "subtitle": "Bench supply · 1V8",
         "device": "JS220",
-        "created": "2025-10-27T02:08:08.533Z",
-        "generated": "2026-07-28T20:44:11.198Z",
-        "avg_voltage": 2.9867142616284292,
-        "event_image": "event-B.png",
+        "created": "2025-10-22T23:10:33.663Z",
+        "generated": "2026-07-28T20:46:53.411Z",
+        "avg_voltage": 1.7920125693046849,
+        "event_image": "event-C.png",
         "build_artifacts": "../build"
     },
     "sleep": {
-        "current_avg": 0.000002758897785625436,
-        "current_std": 9.776890183109695e-7,
-        "power_avg": 0.000008240039362702582
+        "current_avg": 0.000004684491878037989,
+        "current_std": 0.0000010181520626203079,
+        "power_avg": 0.000008394668326249785
     },
     "periods": {
         "one_second": {
-            "event_energy": 0.000016356460964633445,
-            "energy_per_period": 0.000024596500327336026,
-            "energy_per_day": 2.1251376282818324,
-            "emeralds": 37.64462072260222
+            "event_energy": 0.00001547123644675002,
+            "energy_per_period": 0.000023865904772999803,
+            "energy_per_day": 2.062014172387183,
+            "emeralds": 38.79701753329096
         },
         "ten_seconds": {
-            "event_energy": 0.000016356460964633445,
-            "energy_per_period": 0.00009875685459165927,
-            "energy_per_day": 0.853259223671936,
-            "emeralds": 93.75814263773921
+            "event_energy": 0.00001547123644675002,
+            "energy_per_period": 0.00009941791970924786,
+            "energy_per_day": 0.8589708262879014,
+            "emeralds": 93.13471139145112
         }
     }
 }
