@@ -2,7 +2,7 @@
 
 **BlueJoule-ADV** is a behavioral benchmark for measuring the energy required to transmit a prescribed Bluetooth Low Energy advertising event.
 
-This repository is the technical backend for the benchmark. It contains the benchmark definition, measured capture data, platform and power-source declarations, generated result summaries, and best-effort source/build provenance.
+This repository is the technical backend for the benchmark. It contains the benchmark definition, measured capture data, references to stable platform and power-source declarations, generated result summaries, and best-effort source/build provenance.
 
 Public presentation, comparisons, and leaderboards belong at **bluejoule.org**.
 
@@ -53,30 +53,50 @@ Raw capture data is the authoritative measurement record. Generated summaries an
 
 ```text
 captures/
-    <platform>/
+    <vendor-prefixed-platform-id>/
         .platform
         build/
-        <capture>/
+        <voltage>-<analyzer>/
+```
+
+Examples of platform IDs include:
+
+```text
+nrf-54l15-zephyr
+sil-efr32xg22e-simplicity
+ti-cc2340r5-simplelink
 ```
 
 A platform folder may contain:
 
-- `.platform` — URL of the platform declaration
+- `.platform` — exactly one URL identifying the stable PEDS platform declaration
 - `build/` — best-effort source project and generated firmware artifacts
-- capture folders — bench-voltage or modeled-power operating points
+- capture folders — operating points named `<voltage>-<analyzer>`
+
+Current analyzer suffixes are:
+
+```text
+J    Joulescope
+P    PPK2
+O    Otii
+```
+
+Power-source-specific captures may later be nested beneath a folder containing `.power`.
 
 A finalized capture may contain:
 
 ```text
+.emscope/
 capture.yaml
 analysis.yaml
 emscope-capture.zip
 CAPTURE.md
 ABOUT.md
 about.json
+event-*.png
 ```
 
-- `emscope-capture.zip` preserves the raw measurement
+- `emscope-capture.zip` preserves the raw measurement and is managed through Git LFS
 - `CAPTURE.md` contains optional capture-specific notes
 - `ABOUT.md` is a generated human-readable result
 - `about.json` is the generated machine-readable equivalent
@@ -90,4 +110,6 @@ BlueJoule-ADV reports measured event energy, event duration, sleep behavior, dai
 
 ## Status
 
-This repository is being populated incrementally from the original BlueJoule capture corpus. Structure and generated metadata may evolve while the first representative platform captures are migrated and validated.
+The original BlueJoule ADV capture corpus has been migrated into this structure and audited for internal consistency.
+
+Current cleanup work is limited to deferred data and declaration maintenance, including Git LFS verification, future capture additions, PEDS enrichment, and optional build-provenance normalization.
