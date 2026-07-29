@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/in100-nanobeacon.md",
+        "title": "InPlay NanoBeacon™ IN100 Development Kit · NanoBeacon Config Tool",
+        "factoids": [
+            "Board: InPlay NanoBeacon™ IN100 Development Kit",
+            "Device: InPlay IN100",
+            "Architecture: Configurable ASIC",
+            "OTP: 4 Kb",
+            "SRAM: 4 KB",
+            "Configuration tool: NanoBeacon Config Tool",
+            "NanoBeacon Config Tool: 3.2.29"
+        ],
+        "references": [
+            {
+                "title": "IN100 Development Kit",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "IN100 SoC",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "NanoBeacon Config Tool",
+                "url": "https://inplay-tech.com/nanobeacon-config-tool"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-P",
+        "subtitle": "Bench supply · 3V3",
+        "device": "PPK2",
+        "created": "2025-09-07T20:52:39.205Z",
+        "generated": "2026-07-29T00:52:00.713Z",
+        "avg_voltage": 3.3,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 7.349886142549167e-7,
+        "current_std": 1.2352257488579638e-7,
+        "power_avg": 0.000002425462427041225
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000037869498363529155,
+            "energy_per_period": 0.00004029496079057038,
+            "energy_per_day": 3.4814846123052807,
+            "emeralds": 22.978702739986446
+        },
+        "ten_seconds": {
+            "event_energy": 0.000037869498363529155,
+            "energy_per_period": 0.0000621241226339414,
+            "energy_per_day": 0.5367524195572537,
+            "emeralds": 149.0445074583714
+        }
+    }
+}

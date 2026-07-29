@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/em9305-embleu.md",
+        "title": "EM Microelectronic EM9305 SOC DVK · EM Bleu SDK",
+        "factoids": [
+            "Board: EM Microelectronic EM9305 SOC DVK",
+            "MCU: EM Microelectronic EM9305",
+            "CPU: 48 MHz ARC EM7D",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Software SDK: EM Bleu SDK",
+            "EM Bleu SDK: 4.4.1"
+        ],
+        "references": [
+            {
+                "title": "EM9305 SOC DVK",
+                "url": "https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EM9305%20SOC%20DVK%20FACTSHEET.pdf"
+            },
+            {
+                "title": "EM9305 SoC",
+                "url": "https://www.emmicroelectronic.com/product/standard-protocols/em-bleu-em9305"
+            },
+            {
+                "title": "EM Bleu SDK",
+                "url": "https://www.emmicroelectronic.com/contact-us"
+            }
+        ]
+    },
+    "capture": {
+        "name": "1V8-J",
+        "subtitle": "Bench supply · 1V8",
+        "device": "JS220",
+        "created": "2025-10-17T00:50:58.882Z",
+        "generated": "2026-07-29T00:51:09.340Z",
+        "avg_voltage": 1.7920209390591681,
+        "event_image": "event-D.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 8.407875933029163e-7,
+        "current_std": 5.380233315685753e-7,
+        "power_avg": 0.00000150670897249999
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000017996626034035594,
+            "energy_per_period": 0.000019503335006535583,
+            "energy_per_day": 1.6850881445646744,
+            "emeralds": 47.47526131380338
+        },
+        "ten_seconds": {
+            "event_energy": 0.000017996626034035594,
+            "energy_per_period": 0.000033063715759035495,
+            "energy_per_day": 0.28567050415806666,
+            "emeralds": 280.0429125008109
+        }
+    }
+}

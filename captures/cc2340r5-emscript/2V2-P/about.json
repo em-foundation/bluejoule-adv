@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/cc2340r5-emscript.md",
+        "title": "Texas Instruments CC2340R5 LaunchPad · EM•Script",
+        "factoids": [
+            "Board: Texas Instruments CC2340R5 LaunchPad",
+            "MCU: Texas Instruments CC2340R5",
+            "CPU: 48 MHz Arm Cortex-M0+",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "LP-EM-CC2340R5 Development Kit",
+                "url": "https://www.ti.com/tool/LP-EM-CC2340R5"
+            },
+            {
+                "title": "CC2340R5 SoC",
+                "url": "https://www.ti.com/product/CC2340R5"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "capture": {
+        "name": "2V2-P",
+        "subtitle": "Bench supply · 2V2",
+        "device": "PPK2",
+        "created": "2025-09-05T23:43:18.775Z",
+        "generated": "2026-07-29T00:46:26.267Z",
+        "avg_voltage": 2.2,
+        "event_image": "event-D.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 9.342067241507324e-7,
+        "current_std": 0.0000035300403037540434,
+        "power_avg": 0.0000020552547931316114
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000020259394865821417,
+            "energy_per_period": 0.000022314649658953027,
+            "energy_per_day": 1.9279857305335415,
+            "emeralds": 41.494083038602774
+        },
+        "ten_seconds": {
+            "event_energy": 0.000020259394865821417,
+            "energy_per_period": 0.00004081194279713753,
+            "energy_per_day": 0.35261518576726825,
+            "emeralds": 226.87621869127696
+        }
+    }
+}

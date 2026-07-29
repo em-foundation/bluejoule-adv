@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/efr32xg22e-simplicity.md",
+        "title": "Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit · Simplicity Studio",
+        "factoids": [
+            "Board: Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit",
+            "MCU: Silicon Labs EFR32xG22E",
+            "CPU: 76.8 MHz Arm Cortex-M33",
+            "Flash: 512 KB",
+            "SRAM: 32 KB",
+            "Development environment: Simplicity Studio",
+            "Simplicity Studio: 5"
+        ],
+        "references": [
+            {
+                "title": "xG22-EK8200A",
+                "url": "https://www.silabs.com/development-tools/wireless/efr32xg22e-energy-harvesting-explorer-kit?tab=overview"
+            },
+            {
+                "title": "EFR32xG22E SoC",
+                "url": "https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs"
+            },
+            {
+                "title": "Simplicity Studio",
+                "url": "https://www.silabs.com/software-and-tools/simplicity-studio/simplicity-studio-version-5"
+            }
+        ]
+    },
+    "capture": {
+        "name": "1V8-J",
+        "subtitle": "Bench supply · 1V8",
+        "device": "JS220",
+        "created": "2025-10-07T01:37:09.071Z",
+        "generated": "2026-07-29T00:49:22.602Z",
+        "avg_voltage": 1.791237299322923,
+        "event_image": "event-C.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.0000024683053441156844,
+        "current_std": 0.0000016096352719758027,
+        "power_avg": 0.000004421320598498117
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000021673715889735866,
+            "energy_per_period": 0.000026095036488233984,
+            "energy_per_day": 2.2546111525834163,
+            "emeralds": 35.482836988690075
+        },
+        "ten_seconds": {
+            "event_energy": 0.000021673715889735866,
+            "energy_per_period": 0.00006588692187471704,
+            "energy_per_day": 0.5692630049975552,
+            "emeralds": 140.53258212404575
+        }
+    }
+}

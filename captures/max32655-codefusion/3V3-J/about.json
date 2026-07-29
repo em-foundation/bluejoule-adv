@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/max32655-codefusion.md",
+        "title": "Analog Devices MAX32655 Evaluation Kit · CodeFusion Studio",
+        "factoids": [
+            "Board: Analog Devices MAX32655 Evaluation Kit",
+            "MCU: Analog Devices MAX32655",
+            "CPU: 100 MHz Arm Cortex-M4",
+            "Flash: 512 KB",
+            "SRAM: 128 KB",
+            "Development environment: CodeFusion Studio",
+            "CodeFusion Studio: 1.1.0"
+        ],
+        "references": [
+            {
+                "title": "MAX32655 Evaluation Kit",
+                "url": "https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/max32655evkit.html"
+            },
+            {
+                "title": "MAX32655 SoC",
+                "url": "https://www.analog.com/en/products/max32655.html"
+            },
+            {
+                "title": "CodeFusion Studio",
+                "url": "https://www.analog.com/en/resources/evaluation-hardware-and-software/embedded-development-software/codefusion-studio.html"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-J",
+        "subtitle": "Bench supply · 3V3",
+        "device": "JS220",
+        "created": "2025-08-17T01:38:00.167Z",
+        "generated": "2026-07-29T00:49:43.142Z",
+        "avg_voltage": 3.2953091046753724,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.000004421883740064914,
+        "current_std": 8.703071815932855e-7,
+        "power_avg": 0.000014571473748451899
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000047416857848247774,
+            "energy_per_period": 0.00006198833159669967,
+            "energy_per_day": 5.355791849954851,
+            "emeralds": 14.937100290907383
+        },
+        "ten_seconds": {
+            "event_energy": 0.000047416857848247774,
+            "energy_per_period": 0.00019313159533276679,
+            "energy_per_day": 1.668656983675105,
+            "emeralds": 47.94274724084117
+        }
+    }
+}

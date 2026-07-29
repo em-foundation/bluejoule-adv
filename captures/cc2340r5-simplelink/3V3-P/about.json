@@ -1,0 +1,68 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/cc2340r5-simplelink.md",
+        "title": "Texas Instruments CC2340R5 LaunchPad · SimpleLink SDK",
+        "factoids": [
+            "Board: Texas Instruments CC2340R5 LaunchPad",
+            "MCU: Texas Instruments CC2340R5",
+            "CPU: 48 MHz Arm Cortex-M0+",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Development environment: Code Composer Studio IDE",
+            "Code Composer Studio IDE: 12.4.0",
+            "Compiler: TI Arm Clang 2.1.3",
+            "SimpleLink SDK: 8.10.0"
+        ],
+        "references": [
+            {
+                "title": "LP-EM-CC2340R5 Development Kit",
+                "url": "https://www.ti.com/tool/LP-EM-CC2340R5"
+            },
+            {
+                "title": "CC2340R5 SoC",
+                "url": "https://www.ti.com/product/CC2340R5"
+            },
+            {
+                "title": "Code Composer Studio IDE",
+                "url": "https://www.ti.com/tool/CCSTUDIO"
+            },
+            {
+                "title": "TI Arm Clang compiler",
+                "url": "https://www.ti.com/tool/download/ARM-CGT-CLANG"
+            },
+            {
+                "title": "SimpleLink SDK",
+                "url": "https://www.ti.com/tool/SIMPLELINK-LOWPOWER-SDK"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-P",
+        "subtitle": "Bench supply · 3V3",
+        "device": "PPK2",
+        "created": "2025-08-16T02:55:34.655Z",
+        "generated": "2026-07-29T00:47:25.047Z",
+        "avg_voltage": 3.3,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 6.540056341727829e-7,
+        "current_std": 0.0000027175986752592027,
+        "power_avg": 0.0000021582185927701834
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000031746665645911455,
+            "energy_per_period": 0.00003390488423868164,
+            "energy_per_day": 2.9293819982220937,
+            "emeralds": 27.3095144465808
+        },
+        "ten_seconds": {
+            "event_energy": 0.000031746665645911455,
+            "energy_per_period": 0.00005332885157361329,
+            "energy_per_day": 0.4607612775960188,
+            "emeralds": 173.62570139876536
+        }
+    }
+}

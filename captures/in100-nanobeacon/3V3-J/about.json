@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/in100-nanobeacon.md",
+        "title": "InPlay NanoBeacon™ IN100 Development Kit · NanoBeacon Config Tool",
+        "factoids": [
+            "Board: InPlay NanoBeacon™ IN100 Development Kit",
+            "Device: InPlay IN100",
+            "Architecture: Configurable ASIC",
+            "OTP: 4 Kb",
+            "SRAM: 4 KB",
+            "Configuration tool: NanoBeacon Config Tool",
+            "NanoBeacon Config Tool: 3.2.29"
+        ],
+        "references": [
+            {
+                "title": "IN100 Development Kit",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "IN100 SoC",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "NanoBeacon Config Tool",
+                "url": "https://inplay-tech.com/nanobeacon-config-tool"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-J",
+        "subtitle": "Bench supply · 3V3",
+        "device": "JS220",
+        "created": "2025-09-07T20:58:13.118Z",
+        "generated": "2026-07-29T00:51:56.004Z",
+        "avg_voltage": 3.2799249588010113,
+        "event_image": "event-A.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 6.491433719162388e-7,
+        "current_std": 1.3016809515332943e-7,
+        "power_avg": 0.000002129141547388319
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000038321128042350026,
+            "energy_per_period": 0.000040450269589738344,
+            "energy_per_day": 3.494903292553393,
+            "emeralds": 22.890476017020667
+        },
+        "ten_seconds": {
+            "event_energy": 0.000038321128042350026,
+            "energy_per_period": 0.00005961254351623321,
+            "energy_per_day": 0.515052375980255,
+            "emeralds": 155.32400922865924
+        }
+    }
+}

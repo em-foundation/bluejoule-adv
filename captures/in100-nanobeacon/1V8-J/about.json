@@ -1,0 +1,58 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/in100-nanobeacon.md",
+        "title": "InPlay NanoBeacon™ IN100 Development Kit · NanoBeacon Config Tool",
+        "factoids": [
+            "Board: InPlay NanoBeacon™ IN100 Development Kit",
+            "Device: InPlay IN100",
+            "Architecture: Configurable ASIC",
+            "OTP: 4 Kb",
+            "SRAM: 4 KB",
+            "Configuration tool: NanoBeacon Config Tool",
+            "NanoBeacon Config Tool: 3.2.29"
+        ],
+        "references": [
+            {
+                "title": "IN100 Development Kit",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "IN100 SoC",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "NanoBeacon Config Tool",
+                "url": "https://inplay-tech.com/nanobeacon-config-tool"
+            }
+        ]
+    },
+    "capture": {
+        "name": "1V8-J",
+        "subtitle": "Bench supply · 1V8",
+        "device": "JS220",
+        "created": "2025-07-28T01:23:15.548Z",
+        "generated": "2026-07-29T00:51:44.938Z",
+        "avg_voltage": 1.8163476689534386,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 4.948319861810547e-7,
+        "current_std": 1.1360728636918544e-7,
+        "power_avg": 8.987869246235587e-7
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000021184381133589003,
+            "energy_per_period": 0.00002208316805821256,
+            "energy_per_day": 1.9079857202295654,
+            "emeralds": 41.929034977460184
+        },
+        "ten_seconds": {
+            "event_energy": 0.000021184381133589003,
+            "energy_per_period": 0.00003017225037982459,
+            "energy_per_day": 0.26068824328168444,
+            "emeralds": 306.8799689349883
+        }
+    }
+}
