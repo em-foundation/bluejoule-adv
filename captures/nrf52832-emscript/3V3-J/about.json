@@ -1,0 +1,62 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf52832-emscript.md",
+        "title": "Nordic nRF52 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF52832",
+            "CPU: 64 MHz Arm Cortex-M4",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Board: Nordic nRF52 Development Kit",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "Nordic nRF52832",
+                "url": "https://www.nordicsemi.com/Products/nRF52832"
+            },
+            {
+                "title": "Nordic nRF52 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52-DK"
+            },
+            {
+                "title": "Board pinout",
+                "url": "https://github.com/em-foundation/emscope/blob/docs-stable/docs/boards/nrf-52-dk.png"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-J",
+        "subtitle": "Bench supply · 3V3",
+        "device": "JS220",
+        "created": "2025-09-11T00:50:15.201Z",
+        "generated": "2026-07-29T00:09:19.171Z",
+        "avg_voltage": 3.292161587639789,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.0000024561496840665996,
+        "current_std": 0.000014026959311856705,
+        "power_avg": 0.000008086041643377662
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000024072315880845433,
+            "energy_per_period": 0.000032158357524223097,
+            "energy_per_day": 2.7784820900928757,
+            "emeralds": 28.79269954096622
+        },
+        "ten_seconds": {
+            "event_energy": 0.000024072315880845433,
+            "energy_per_period": 0.00010493273231462205,
+            "energy_per_day": 0.9066188071983344,
+            "emeralds": 88.23995196748547
+        }
+    }
+}

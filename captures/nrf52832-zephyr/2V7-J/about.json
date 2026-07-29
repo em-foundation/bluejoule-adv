@@ -1,0 +1,63 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf52832-zephyr.md",
+        "title": "Nordic nRF52 DK · Zephyr",
+        "factoids": [
+            "MCU: Nordic nRF52832",
+            "CPU: 64 MHz Arm Cortex-M4",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Board: Nordic nRF52 Development Kit",
+            "Software stack: Zephyr",
+            "nRF Connect SDK: 3.0.2",
+            "Toolchain: nRF Connect SDK Toolchain 3.0.2"
+        ],
+        "references": [
+            {
+                "title": "Nordic nRF52832",
+                "url": "https://www.nordicsemi.com/Products/nRF52832"
+            },
+            {
+                "title": "Nordic nRF52 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52-DK"
+            },
+            {
+                "title": "Board pinout",
+                "url": "https://github.com/em-foundation/emscope/blob/docs-stable/docs/boards/nrf-52-dk.png"
+            },
+            {
+                "title": "nRF Connect SDK",
+                "url": "https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK"
+            }
+        ]
+    },
+    "capture": {
+        "name": "2V7-J",
+        "subtitle": "Bench supply · 2V7",
+        "device": "JS220",
+        "created": "2025-10-26T13:44:26.125Z",
+        "generated": "2026-07-29T00:09:27.876Z",
+        "avg_voltage": 2.6870465554445584,
+        "event_image": "event-A.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.000001310334389745385,
+        "current_std": 0.000008564254543467177,
+        "power_avg": 0.0000035209295084458844
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.00002677407211631432,
+            "energy_per_period": 0.000030295001624760202,
+            "energy_per_day": 2.6174881403792813,
+            "emeralds": 30.56365328494202
+        },
+        "ten_seconds": {
+            "event_energy": 0.00002677407211631432,
+            "energy_per_period": 0.00006198336720077316,
+            "energy_per_day": 0.53553629261468,
+            "emeralds": 149.38296638946977
+        }
+    }
+}
