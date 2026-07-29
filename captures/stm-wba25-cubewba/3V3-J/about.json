@@ -1,0 +1,62 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/stm-wba25-cubewba.md",
+        "title": "STMicro STM32WBA25 · STM32CubeWBA",
+        "factoids": [
+            "Board: NUCLEO-WBA25CE1",
+            "MCU: STM32WBA25CEU7",
+            "CPU: 64 MHz Arm Cortex-M33",
+            "Flash: 512 KB",
+            "SRAM: 96 KB",
+            "SDK: STM32CubeWBA 1.9.0",
+            "Benchmark application: BlueJoule-ADV, 1 s advertising interval"
+        ],
+        "references": [
+            {
+                "title": "NUCLEO-WBA25CE1",
+                "url": "https://www.st.com/en/evaluation-tools/nucleo-wba25ce1.html"
+            },
+            {
+                "title": "Board pinout and CAD resources",
+                "url": "https://www.st.com/en/evaluation-tools/nucleo-wba25ce1.html#cad-resources"
+            },
+            {
+                "title": "STM32WBA25CEU7",
+                "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32wba25ce.html"
+            },
+            {
+                "title": "STM32CubeWBA",
+                "url": "https://www.st.com/en/embedded-software/stm32cubewba.html"
+            }
+        ]
+    },
+    "capture": {
+        "name": "3V3-J",
+        "subtitle": "Bench supply · 3V3",
+        "device": "JS220",
+        "created": "2026-04-16T13:12:26.079Z",
+        "generated": "2026-07-29T23:23:28.715Z",
+        "avg_voltage": 3.2916950495173536,
+        "event_image": "event-B.png",
+        "build_artifacts": "../build"
+    },
+    "sleep": {
+        "current_avg": 0.0000011869055171001009,
+        "current_std": 5.134697910839245e-7,
+        "power_avg": 0.000003906931014883237
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.00002228414319907973,
+            "energy_per_period": 0.000026191074213962965,
+            "energy_per_day": 2.2629088120864003,
+            "emeralds": 35.35272812263259
+        },
+        "ten_seconds": {
+            "event_energy": 0.00002228414319907973,
+            "energy_per_period": 0.0000613534533479121,
+            "energy_per_day": 0.5300938369259606,
+            "emeralds": 150.91667630758323
+        }
+    }
+}
