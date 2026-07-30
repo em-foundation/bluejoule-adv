@@ -31,8 +31,15 @@
         "subtitle": "Bench supply · 1V5",
         "device": "JS220",
         "created": "2025-10-26T12:53:33.210Z",
-        "generated": "2026-07-29T00:51:39.588Z",
+        "generated": "2026-07-30T01:10:55.418Z",
         "avg_voltage": 1.4931927457849583,
+        "voltage": {
+            "source": "measured",
+            "avg": 1.4987809505591179,
+            "min": 1.4854403734207153,
+            "max": 1.502756118774414,
+            "std": 0.0009139949777081058
+        },
         "event_image": "event-B.png",
         "build_artifacts": "../build"
     },

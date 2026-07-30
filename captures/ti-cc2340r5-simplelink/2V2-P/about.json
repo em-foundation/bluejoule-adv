@@ -41,8 +41,12 @@
         "subtitle": "Bench supply · 2V2",
         "device": "PPK2",
         "created": "2025-09-05T23:24:06.450Z",
-        "generated": "2026-07-29T00:46:56.611Z",
+        "generated": "2026-07-30T01:11:22.555Z",
         "avg_voltage": 2.2,
+        "voltage": {
+            "source": "declared",
+            "value": 2.2
+        },
         "event_image": "event-B.png",
         "build_artifacts": "../build"
     },

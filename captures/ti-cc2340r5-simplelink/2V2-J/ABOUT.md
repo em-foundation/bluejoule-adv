@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 2V2</h3>
 
 
-<p align="right"><sub>captured on 2025-09-07 @ 16:07:08<br>generated on 2026-07-29 @ 00:46:50</sub></p>
+<p align="right"><sub>captured on 2025-09-07 @ 16:07:08<br>generated on 2026-07-30 @ 01:11:22</sub></p>
 
 ## Platform
 
@@ -29,6 +29,13 @@
 
 
 ## EM&bull;Scope results · JS220
+
+### 🟠&ensp;measured voltage
+
+| &emsp;average&emsp; | &emsp;minimum&emsp; | &emsp;maximum&emsp; | &emsp;standard deviation&emsp;
+|:---:|:---:|:---:|:---:|
+| 2.228 V | 2.163 V | 2.301 V | 0.003 V |
+
 
 ### 🟠&ensp;sleep
 

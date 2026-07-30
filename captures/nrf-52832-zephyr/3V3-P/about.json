@@ -36,8 +36,12 @@
         "subtitle": "Bench supply · 3V3",
         "device": "PPK2",
         "created": "2025-07-26T14:12:17.788Z",
-        "generated": "2026-07-29T00:09:42.103Z",
+        "generated": "2026-07-30T01:11:02.287Z",
         "avg_voltage": 3.3,
+        "voltage": {
+            "source": "declared",
+            "value": 3.3
+        },
         "event_image": "event-B.png",
         "build_artifacts": "../build"
     },

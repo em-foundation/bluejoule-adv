@@ -35,8 +35,15 @@
         "subtitle": "Bench supply · 3V3",
         "device": "JS220",
         "created": "2025-09-11T00:50:15.201Z",
-        "generated": "2026-07-29T00:09:19.171Z",
+        "generated": "2026-07-30T01:11:00.223Z",
         "avg_voltage": 3.292161587639789,
+        "voltage": {
+            "source": "measured",
+            "avg": 3.3044823500820697,
+            "min": 3.2892203330993652,
+            "max": 3.3117265701293945,
+            "std": 0.0010941556990570658
+        },
         "event_image": "event-B.png",
         "build_artifacts": "../build"
     },

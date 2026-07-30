@@ -31,8 +31,12 @@
         "subtitle": "Bench supply · 1V8",
         "device": "PPK2",
         "created": "2025-07-28T02:32:12.751Z",
-        "generated": "2026-07-29T00:51:50.678Z",
+        "generated": "2026-07-30T01:10:56.470Z",
         "avg_voltage": 1.8,
+        "voltage": {
+            "source": "declared",
+            "value": 1.8
+        },
         "event_image": "event-B.png",
         "build_artifacts": "../build"
     },

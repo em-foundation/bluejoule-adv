@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 3V0</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 03:16:25<br>generated on 2026-07-29 @ 00:47:02</sub></p>
+<p align="right"><sub>captured on 2025-10-27 @ 03:16:25<br>generated on 2026-07-30 @ 01:11:23</sub></p>
 
 ## Platform
 
@@ -29,6 +29,13 @@
 
 
 ## EM&bull;Scope results · JS220
+
+### 🟠&ensp;measured voltage
+
+| &emsp;average&emsp; | &emsp;minimum&emsp; | &emsp;maximum&emsp; | &emsp;standard deviation&emsp;
+|:---:|:---:|:---:|:---:|
+| 3.118 V | 3.102 V | 3.122 V | 0.001 V |
+
 
 ### 🟠&ensp;sleep
 

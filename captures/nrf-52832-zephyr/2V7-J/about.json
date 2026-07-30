@@ -36,8 +36,15 @@
         "subtitle": "Bench supply · 2V7",
         "device": "JS220",
         "created": "2025-10-26T13:44:26.125Z",
-        "generated": "2026-07-29T00:09:27.876Z",
+        "generated": "2026-07-30T01:11:01.026Z",
         "avg_voltage": 2.6870465554445584,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.6971027028722174,
+            "min": 2.687946319580078,
+            "max": 2.70271372795105,
+            "std": 0.00088328486545896
+        },
         "event_image": "event-A.png",
         "build_artifacts": "../build"
     },
