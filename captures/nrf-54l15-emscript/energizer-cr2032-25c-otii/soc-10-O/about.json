@@ -1,0 +1,77 @@
+{
+    "platform": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-emscript.md",
+        "title": "Nordic nRF54L15 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "power": {
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/energizer-cr2032-25c-otii.md",
+        "title": "Energizer CR2032 · 25 °C · Otii model",
+        "factoids": [
+            "Manufacturer: Energizer",
+            "Battery type: CR2032",
+            "Model temperature: 25 °C",
+            "Power source: modeled battery",
+            "Battery-model provider: Qoitech Otii",
+            "Note: provisional declaration for historical BlueJoule-ADV captures; exact model metadata has not yet been confirmed"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "soc-10-O",
+        "subtitle": "10% SOC",
+        "device": "Otii3",
+        "created": "2026-05-13T23:11:33.372Z",
+        "generated": "2026-07-30T02:24:29.052Z",
+        "avg_voltage": 2.6021598822919527,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.6021598822919527,
+            "min": 2.2806692123413086,
+            "max": 2.6170566082000732,
+            "std": 0.00874932255864142
+        },
+        "event_image": "event-B.png"
+    },
+    "sleep": {
+        "current_avg": 7.830731673767737e-7,
+        "current_std": 0.000005611646510066112,
+        "power_avg": 0.0000020376815810471323
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.00001548574656507419,
+            "energy_per_period": 0.000017523428146121324,
+            "energy_per_day": 1.5140241918248825,
+            "emeralds": 52.83931421437491
+        },
+        "ten_seconds": {
+            "event_energy": 0.00001548574656507419,
+            "energy_per_period": 0.000035862562375545515,
+            "energy_per_day": 0.30985253892471326,
+            "emeralds": 258.18733090787447
+        }
+    }
+}
