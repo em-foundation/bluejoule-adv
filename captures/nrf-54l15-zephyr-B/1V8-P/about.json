@@ -1,0 +1,129 @@
+{
+    "id": "bluejoule-adv:nrf-54l15-zephyr-B:1V8-P",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "nrf-54l15-zephyr-B",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-zephyr-B.md",
+        "title": "Nordic nRF54L15 DK · Zephyr · NCS 3.1.1 · Retain 16 KB",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software stack: Zephyr",
+            "nRF Connect SDK: 3.1.1",
+            "Toolchain: nRF Connect SDK Toolchain 3.1.1",
+            "Advertising mode: legacy non-connectable broadcaster",
+            "Retained SRAM: 16 KB",
+            "SRAM base address: `0x2003C000`",
+            "RRAM low-power power-off: enabled",
+            "Serial and console support: disabled",
+            "Thread and system stack sizes: reduced for this benchmark configuration"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "nRF Connect SDK",
+                "url": "https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "1V8-P",
+        "subtitle": "Bench supply · 1V8",
+        "device": "PPK2",
+        "created": "2025-11-27T11:24:34.595Z",
+        "generated": "2026-08-13T14:47:35.329Z",
+        "duration": 12,
+        "sampling_rate": 100000,
+        "sample_count": 1200000,
+        "voltage": {
+            "source": "declared",
+            "value": 1.8
+        },
+        "images": [
+            "event-A.png",
+            "event-C.png"
+        ],
+        "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 12,
+        "duration_avg": 0.013,
+        "duration_std": 0.0016266017746619278,
+        "energy_avg": 0.000015840720391917463,
+        "energy_std": 2.839153979102133e-7
+    },
+    "sleep": {
+        "current_avg": 0.0000010240808763697372,
+        "current_std": 8.054136673335406e-7,
+        "power_avg": 0.000001843345577465527
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.000015840720391917463,
+            "energy_per_period": 0.000017660102476875937,
+            "energy_per_day": 1.525832854002081,
+            "emeralds": 52.430382390947585
+        },
+        "ten_seconds": {
+            "event_energy": 0.000015840720391917463,
+            "energy_per_period": 0.00003425021267406568,
+            "energy_per_day": 0.2959218375039275,
+            "emeralds": 270.34165736058003
+        }
+    }
+}

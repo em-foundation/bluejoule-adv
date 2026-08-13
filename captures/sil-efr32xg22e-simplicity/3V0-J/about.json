@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:sil-efr32xg22e-simplicity:3V0-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/efr32xg22e-simplicity.md",
+        "moniker": "sil-efr32xg22e-simplicity",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/sil-efr32xg22e-simplicity.md",
         "title": "Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit · Simplicity Studio",
         "factoids": [
             "Board: Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit",
@@ -26,40 +63,63 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "3V0-J",
         "subtitle": "Bench supply · 3V0",
         "device": "JS220",
         "created": "2025-10-27T02:01:19.015Z",
-        "generated": "2026-07-30T01:11:14.918Z",
-        "avg_voltage": 2.9870642951819497,
+        "generated": "2026-08-13T14:48:40.685Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
         "voltage": {
             "source": "measured",
             "avg": 2.998243245121385,
             "min": 2.9888916015625,
             "max": 3.0031769275665283,
-            "std": 0.0009262591216815099
+            "std": 0.0009262591216815099,
+            "droop": 0.009351643558884959
         },
-        "event_image": "event-B.png",
+        "images": [
+            "event-B.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.0032,
+        "duration_std": 0.000722841614740048,
+        "energy_avg": 0.000023364204633302835,
+        "energy_std": 9.754384608413368e-8
     },
     "sleep": {
         "current_avg": 0.000001650141577725639,
         "current_std": 8.639133436617412e-7,
-        "power_avg": 0.000004929078988819467
+        "power_avg": 0.000004947525838909842
     },
     "periods": {
         "one_second": {
             "event_energy": 0.000023364204633302835,
-            "energy_per_period": 0.0000282932836221223,
-            "energy_per_day": 2.444539704951367,
-            "emeralds": 32.72599738836787
+            "energy_per_period": 0.000028295898389528164,
+            "energy_per_day": 2.4447656208552333,
+            "emeralds": 32.72297324436942
         },
         "ten_seconds": {
             "event_energy": 0.000023364204633302835,
-            "energy_per_period": 0.0000726549945214975,
-            "energy_per_day": 0.6277391526657384,
-            "emeralds": 127.44146937509693
+            "energy_per_period": 0.00007282363093971674,
+            "energy_per_day": 0.6291961713191526,
+            "emeralds": 127.14635537637578
         }
     }
 }

@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:nrf-54l15-zephyr:3V3-P",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-zephyr.md",
+        "moniker": "nrf-54l15-zephyr",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-zephyr.md",
         "title": "Nordic nRF54L15 DK · Zephyr · NCS 3.0.2",
         "factoids": [
             "MCU: Nordic nRF54L15",
@@ -31,19 +68,41 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "3V3-P",
         "subtitle": "Bench supply · 3V3",
         "device": "PPK2",
         "created": "2025-09-07T17:26:37.007Z",
-        "generated": "2026-07-30T01:11:09.833Z",
-        "avg_voltage": 3.3,
+        "generated": "2026-08-13T14:48:33.817Z",
+        "duration": 12,
+        "sampling_rate": 100000,
+        "sample_count": 1200000,
         "voltage": {
             "source": "declared",
             "value": 3.3
         },
-        "event_image": "event-B.png",
+        "images": [
+            "event-B.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.00355,
+        "duration_std": 0.00014999999999999996,
+        "energy_avg": 0.000018171185457602006,
+        "energy_std": 2.825570372098406e-7
     },
     "sleep": {
         "current_avg": 0.000003398737013526443,
@@ -53,15 +112,15 @@
     "periods": {
         "one_second": {
             "event_energy": 0.000018171185457602006,
-            "energy_per_period": 0.00002938701760223927,
-            "energy_per_day": 2.539038320833473,
-            "emeralds": 31.50799235426228
+            "energy_per_period": 0.000029347201398125806,
+            "energy_per_day": 2.5355982007980695,
+            "emeralds": 31.550740166490225
         },
         "ten_seconds": {
             "event_energy": 0.000018171185457602006,
-            "energy_per_period": 0.00013032950690397462,
-            "energy_per_day": 1.1260469396503408,
-            "emeralds": 71.04499571291544
+            "energy_per_period": 0.00013028969069986114,
+            "energy_per_day": 1.1257029276468002,
+            "emeralds": 71.06670688618902
         }
     }
 }

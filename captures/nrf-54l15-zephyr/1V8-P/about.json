@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:nrf-54l15-zephyr:1V8-P",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-zephyr.md",
+        "moniker": "nrf-54l15-zephyr",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-zephyr.md",
         "title": "Nordic nRF54L15 DK · Zephyr · NCS 3.0.2",
         "factoids": [
             "MCU: Nordic nRF54L15",
@@ -31,19 +68,41 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "1V8-P",
         "subtitle": "Bench supply · 1V8",
         "device": "PPK2",
         "created": "2025-07-26T15:14:27.641Z",
-        "generated": "2026-07-30T01:11:07.288Z",
-        "avg_voltage": 1.8,
+        "generated": "2026-08-13T14:48:30.054Z",
+        "duration": 12,
+        "sampling_rate": 100000,
+        "sample_count": 1200000,
         "voltage": {
             "source": "declared",
             "value": 1.8
         },
-        "event_image": "event-C.png",
+        "images": [
+            "event-C.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.0030749999999999996,
+        "duration_std": 0.000317214438511238,
+        "energy_avg": 0.000011543386264157843,
+        "energy_std": 4.463660405022875e-7
     },
     "sleep": {
         "current_avg": 0.000002721813650225613,
@@ -53,15 +112,15 @@
     "periods": {
         "one_second": {
             "event_energy": 0.000011543386264157843,
-            "energy_per_period": 0.000016442650834563946,
-            "energy_per_day": 1.4206450321063249,
-            "emeralds": 56.312448354102706
+            "energy_per_period": 0.000016427585596009947,
+            "energy_per_day": 1.4193433954952595,
+            "emeralds": 56.36409078585606
         },
         "ten_seconds": {
             "event_energy": 0.000011543386264157843,
-            "energy_per_period": 0.000060536031968218875,
-            "energy_per_day": 0.5230313162054111,
-            "emeralds": 152.95451251446949
+            "energy_per_period": 0.000060520966729664876,
+            "energy_per_day": 0.5229011525443046,
+            "emeralds": 152.99258686032772
         }
     }
 }

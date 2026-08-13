@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:adi-max32655-codefusion:3V3-P",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/max32655-codefusion.md",
+        "moniker": "adi-max32655-codefusion",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/adi-max32655-codefusion.md",
         "title": "Analog Devices MAX32655 Evaluation Kit · CodeFusion Studio",
         "factoids": [
             "Board: Analog Devices MAX32655 Evaluation Kit",
@@ -26,19 +63,41 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "3V3-P",
         "subtitle": "Bench supply · 3V3",
         "device": "PPK2",
         "created": "2025-08-16T14:25:12.830Z",
-        "generated": "2026-07-30T01:10:52.216Z",
-        "avg_voltage": 3.3,
+        "generated": "2026-08-13T14:47:53.350Z",
+        "duration": 12,
+        "sampling_rate": 100000,
+        "sample_count": 1200000,
         "voltage": {
             "source": "declared",
             "value": 3.3
         },
-        "event_image": "event-B.png",
+        "images": [
+            "event-B.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.011125000000000001,
+        "duration_std": 0.004357823424600864,
+        "energy_avg": 0.00005067403864597669,
+        "energy_std": 0.000008193487130485403
     },
     "sleep": {
         "current_avg": 0.000004358853055009604,
@@ -48,15 +107,15 @@
     "periods": {
         "one_second": {
             "event_energy": 0.00005067403864597669,
-            "energy_per_period": 0.00006505825372750838,
-            "energy_per_day": 5.621033122056724,
-            "emeralds": 14.232259135083726
+            "energy_per_period": 0.00006489822933472634,
+            "energy_per_day": 5.607207014520355,
+            "emeralds": 14.267352675375275
         },
         "ten_seconds": {
             "event_energy": 0.00005067403864597669,
-            "energy_per_period": 0.0001945161894612936,
-            "energy_per_day": 1.6806198769455765,
-            "emeralds": 47.60148389140505
+            "energy_per_period": 0.00019435616506851156,
+            "energy_per_day": 1.6792372661919397,
+            "emeralds": 47.640676877912895
         }
     }
 }

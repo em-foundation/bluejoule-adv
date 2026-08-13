@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:nrf-54l15-emscript:soc-90-O",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-emscript.md",
+        "moniker": "nrf-54l15-emscript",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-emscript.md",
         "title": "Nordic nRF54L15 DK · EM•Script",
         "factoids": [
             "MCU: Nordic nRF54L15",
@@ -27,6 +64,7 @@
         ]
     },
     "power": {
+        "moniker": "energizer-cr2032-25c-otii",
         "url": "https://github.com/em-foundation/PEDS/blob/main/power/energizer-cr2032-25c-otii.md",
         "title": "Energizer CR2032 · 25 °C · Otii model",
         "factoids": [
@@ -44,16 +82,28 @@
         "subtitle": "90% SOC",
         "device": "Otii3",
         "created": "2026-05-13T22:36:24.119Z",
-        "generated": "2026-07-30T02:24:30.584Z",
-        "avg_voltage": 2.963733859040737,
+        "generated": "2026-08-13T14:48:27.362Z",
+        "duration": 12,
+        "sampling_rate": 50000,
+        "sample_count": 600000,
         "voltage": {
             "source": "measured",
             "avg": 2.963733859040737,
             "min": 2.8738582134246826,
             "max": 2.9780001640319824,
-            "std": 0.0013556712315862605
+            "std": 0.0013556712315862605,
+            "droop": 0.08987564561605454
         },
-        "event_image": "event-B.png"
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.001924,
+        "duration_std": 0.00017246448909848079,
+        "energy_avg": 0.000016606051034261686,
+        "energy_std": 9.883637702390338e-8
     },
     "sleep": {
         "current_avg": 8.341886180034015e-7,
@@ -63,15 +113,15 @@
     "periods": {
         "one_second": {
             "event_energy": 0.000016606051034261686,
-            "energy_per_period": 0.000019078364086264768,
-            "energy_per_day": 1.648370657053276,
-            "emeralds": 48.53277365602509
+            "energy_per_period": 0.000019073607355952713,
+            "energy_per_day": 1.6479596755543144,
+            "emeralds": 48.544877151251214
         },
         "ten_seconds": {
             "event_energy": 0.000016606051034261686,
-            "energy_per_period": 0.00004132918155429249,
-            "energy_per_day": 0.3570841286290871,
-            "emeralds": 224.0368405818959
+            "energy_per_period": 0.00004132442482398044,
+            "energy_per_day": 0.357043030479191,
+            "emeralds": 224.062628789116
         }
     }
 }

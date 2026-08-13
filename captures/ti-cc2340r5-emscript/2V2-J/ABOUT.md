@@ -4,7 +4,26 @@
 <h3 align="center">Bench supply · 2V2</h3>
 
 
-<p align="right"><sub>captured on 2025-11-11 @ 18:23:25<br>generated on 2026-07-30 @ 01:11:19</sub></p>
+<p align="right"><sub>captured on 2025-11-11 @ 18:23:25<br>generated on 2026-08-13 @ 14:48:48</sub></p>
+
+## Activity
+
+- Activity: Bluetooth Low Energy legacy advertising
+- Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)
+- PHY: LE 1M
+- Advertising channels: 37, 38, and 39
+- TX power: 0 dBm
+- Advertising interval: 1 s
+- Advertising payload length: 19 bytes
+- Advertising event: one back-to-back transmission on each of channels 37, 38, and 39
+- Flags: LE General Discoverable; BR/EDR not supported
+- Local name: `BlueJoule`
+- Manufacturer ID: Novel Bits (`0x08D3`)
+- Manufacturer data: `0xFF`
+- Conformance basis: observable over-the-air behavior, not a canonical source implementation
+- Measurement result: average event energy and average event duration derived from repeated detected events
+- Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections
+
 
 ## Platform
 
@@ -22,6 +41,13 @@
 - [CC2340R5 SoC](https://www.ti.com/product/CC2340R5)
 - [EM•Script project](https://github.com/em-foundation/emporium)
 - [BUILD ARTIFACTS](../build)
+
+## Power Source
+
+- Power source: regulated bench supply
+- State of charge: not applicable
+- Battery model: none
+
 
 
 ## EM&bull;Scope results · JS220
@@ -41,15 +67,15 @@
 
 ### 🟠&ensp;1&thinsp;s event period
 
-| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
-|:---:|:---:|:---:|:---:|
-| 16.1 µJ | 17.8 µJ |  1.5 J | 52.02 |
+| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
+|:---:|:---:|:---:|:---:|:---:|
+| 16.1 µJ |  0.0 µJ | 17.8 µJ |  1.5 J | 52.01 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
-| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
-|:---:|:---:|:---:|:---:|
-| 16.1 µJ | 33.3 µJ |  0.3 J | 278.20 |
+| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
+|:---:|:---:|:---:|:---:|:---:|
+| 16.1 µJ |  0.0 µJ | 33.3 µJ |  0.3 J | 277.69 |
 
 ## Typical Event
 

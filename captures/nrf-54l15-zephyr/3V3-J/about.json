@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:nrf-54l15-zephyr:3V3-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf54l15-zephyr.md",
+        "moniker": "nrf-54l15-zephyr",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-zephyr.md",
         "title": "Nordic nRF54L15 DK · Zephyr · NCS 3.0.2",
         "factoids": [
             "MCU: Nordic nRF54L15",
@@ -31,40 +68,63 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "3V3-J",
         "subtitle": "Bench supply · 3V3",
         "device": "JS220",
         "created": "2025-10-22T23:05:26.989Z",
-        "generated": "2026-07-30T01:11:09.229Z",
-        "avg_voltage": 3.284749333396872,
+        "generated": "2026-08-13T14:48:32.483Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
         "voltage": {
             "source": "measured",
             "avg": 3.297042355820549,
             "min": 3.2608389854431152,
             "max": 3.310098648071289,
-            "std": 0.0009692138539682582
+            "std": 0.0009692138539682582,
+            "droop": 0.0362033703774336
         },
-        "event_image": "event-C.png",
+        "images": [
+            "event-C.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.0033,
+        "duration_std": 0.0005220153254455276,
+        "energy_avg": 0.00001883883057593642,
+        "energy_std": 0.0000016837797540999318
     },
     "sleep": {
         "current_avg": 0.000003505336728238717,
         "current_std": 8.980077836232087e-7,
-        "power_avg": 0.000011514152481413699
+        "power_avg": 0.000011557243664416475
     },
     "periods": {
         "one_second": {
             "event_energy": 0.00001883883057593642,
-            "energy_per_period": 0.00003035298305735012,
-            "energy_per_day": 2.6224977361550503,
-            "emeralds": 30.505269422001952
+            "energy_per_period": 0.000030357935336260322,
+            "energy_per_day": 2.622925613052892,
+            "emeralds": 30.50029310853612
         },
         "ten_seconds": {
             "event_energy": 0.00001883883057593642,
-            "energy_per_period": 0.0001339803553900734,
-            "energy_per_day": 1.1575902705702341,
-            "emeralds": 69.10908119553531
+            "energy_per_period": 0.0001343731283160086,
+            "energy_per_day": 1.1609838286503145,
+            "emeralds": 68.9070752113773
         }
     }
 }

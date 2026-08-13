@@ -1,6 +1,43 @@
 {
+    "id": "bluejoule-adv:inp-100-nanobeacon:3V3-P",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
-        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/in100-nanobeacon.md",
+        "moniker": "inp-100-nanobeacon",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/inp-100-nanobeacon.md",
         "title": "InPlay NanoBeacon™ IN100 Development Kit · NanoBeacon Config Tool",
         "factoids": [
             "Board: InPlay NanoBeacon™ IN100 Development Kit",
@@ -26,19 +63,41 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "3V3-P",
         "subtitle": "Bench supply · 3V3",
         "device": "PPK2",
         "created": "2025-09-07T20:52:39.205Z",
-        "generated": "2026-07-30T01:10:58.535Z",
-        "avg_voltage": 3.3,
+        "generated": "2026-08-13T14:48:05.437Z",
+        "duration": 12,
+        "sampling_rate": 100000,
+        "sample_count": 1200000,
         "voltage": {
             "source": "declared",
             "value": 3.3
         },
-        "event_image": "event-B.png",
+        "images": [
+            "event-B.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.016825,
+        "duration_std": 0.0010188841936157416,
+        "energy_avg": 0.000037869498363529155,
+        "energy_std": 3.108130168613731e-7
     },
     "sleep": {
         "current_avg": 7.349886142549167e-7,
@@ -48,15 +107,15 @@
     "periods": {
         "one_second": {
             "event_energy": 0.000037869498363529155,
-            "energy_per_period": 0.00004029496079057038,
-            "energy_per_day": 3.4814846123052807,
-            "emeralds": 22.978702739986446
+            "energy_per_period": 0.00004025415238523541,
+            "energy_per_day": 3.477958766084339,
+            "emeralds": 23.001997832788575
         },
         "ten_seconds": {
             "event_energy": 0.000037869498363529155,
-            "energy_per_period": 0.0000621241226339414,
-            "energy_per_day": 0.5367524195572537,
-            "emeralds": 149.0445074583714
+            "energy_per_period": 0.00006208331422860644,
+            "energy_per_day": 0.5363998349351596,
+            "emeralds": 149.14247691681422
         }
     }
 }

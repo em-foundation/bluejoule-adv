@@ -1,5 +1,42 @@
 {
+    "id": "bluejoule-adv:stm-wba25-cubewba:1V8-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
     "platform": {
+        "moniker": "stm-wba25-cubewba",
         "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/stm-wba25-cubewba.md",
         "title": "STMicro STM32WBA25 · STM32CubeWBA",
         "factoids": [
@@ -30,40 +67,63 @@
             }
         ]
     },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
     "capture": {
         "name": "1V8-J",
         "subtitle": "Bench supply · 1V8",
         "device": "JS220",
         "created": "2026-04-15T21:13:18.539Z",
-        "generated": "2026-07-30T01:11:16.611Z",
-        "avg_voltage": 1.7959614423326453,
+        "generated": "2026-08-13T14:48:43.587Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
         "voltage": {
             "source": "measured",
             "avg": 1.8026827449471807,
             "min": 1.788602590560913,
             "max": 1.8081693649291992,
-            "std": 0.0005734407014342495
+            "std": 0.0005734407014342495,
+            "droop": 0.01408015438626764
         },
-        "event_image": "event-B.png",
+        "images": [
+            "event-B.png"
+        ],
         "build_artifacts": "../build"
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.004975000000000001,
+        "duration_std": 0.00200452612854011,
+        "energy_avg": 0.000018379393381674147,
+        "energy_std": 1.6152389363933197e-7
     },
     "sleep": {
         "current_avg": 9.073047006619705e-7,
         "current_std": 6.147302600948506e-7,
-        "power_avg": 0.0000016294842588360616
+        "power_avg": 0.000001635582528292801
     },
     "periods": {
         "one_second": {
             "event_energy": 0.000018379393381674147,
-            "energy_per_period": 0.00002000887764051021,
-            "energy_per_day": 1.728767028140082,
-            "emeralds": 46.2757553202927
+            "energy_per_period": 0.00002000683888688869,
+            "energy_per_day": 1.7285908798271827,
+            "emeralds": 46.28047095099684
         },
         "ten_seconds": {
             "event_energy": 0.000018379393381674147,
-            "energy_per_period": 0.00003467423597003476,
-            "energy_per_day": 0.2995853987811003,
-            "emeralds": 267.0357111043787
+            "energy_per_period": 0.0000347270816415239,
+            "energy_per_day": 0.3000419853827665,
+            "emeralds": 266.62935154872815
         }
     }
 }
