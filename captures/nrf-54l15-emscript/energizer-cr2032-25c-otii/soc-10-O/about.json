@@ -1,0 +1,128 @@
+{
+    "id": "bluejoule-adv:nrf-54l15-emscript:soc-10-O",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.0.0"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "nrf-54l15-emscript",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-emscript.md",
+        "title": "Nordic nRF54L15 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "energizer-cr2032-25c-otii",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/energizer-cr2032-25c-otii.md",
+        "title": "Energizer CR2032 · 25 °C · Otii model",
+        "factoids": [
+            "Manufacturer: Energizer",
+            "Battery type: CR2032",
+            "Model temperature: 25 °C",
+            "Power source: modeled battery",
+            "Battery-model provider: Qoitech Otii",
+            "Note: provisional declaration for historical BlueJoule-ADV captures; exact model metadata has not yet been confirmed"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "soc-10-O",
+        "subtitle": "10% SOC",
+        "device": "Otii3",
+        "created": "2026-05-13T23:11:33.372Z",
+        "generated": "2026-08-13T14:48:24.306Z",
+        "duration": 12,
+        "sampling_rate": 50000,
+        "sample_count": 600000,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.6021598822919527,
+            "min": 2.2806692123413086,
+            "max": 2.6170566082000732,
+            "std": 0.00874932255864142,
+            "droop": 0.3214906699506441
+        },
+        "images": [
+            "event-B.png",
+            "event-D.png"
+        ]
+    },
+    "events": {
+        "count": 12,
+        "duration_avg": 0.0046233333333333335,
+        "duration_std": 0.0005498383600861459,
+        "energy_avg": 0.00001548574656507419,
+        "energy_std": 1.8728884210508673e-7
+    },
+    "sleep": {
+        "current_avg": 7.830731673767737e-7,
+        "current_std": 0.000005611646510066112,
+        "power_avg": 0.0000020376815810471323
+    },
+    "periods": {
+        "one_second": {
+            "event_energy": 0.00001548574656507419,
+            "energy_per_period": 0.000017514007264944948,
+            "energy_per_day": 1.5132102276912436,
+            "emeralds": 52.867736773137416
+        },
+        "ten_seconds": {
+            "event_energy": 0.00001548574656507419,
+            "energy_per_period": 0.00003585314149436914,
+            "energy_per_day": 0.3097711425113494,
+            "emeralds": 258.2551730010453
+        }
+    }
+}
