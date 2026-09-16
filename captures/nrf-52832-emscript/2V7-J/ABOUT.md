@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 2V7</h3>
 
 
-<p align="right"><sub>captured on 2025-09-11 @ 01:20:33<br>generated on 2026-08-13 @ 14:48:06</sub></p>
+<p align="right"><sub>captured on 2025-09-11 @ 01:20:33<br>generated on 2026-09-16 @ 17:13:01</sub></p>
 
 ## Activity
 
@@ -41,7 +41,6 @@
 - [Nordic nRF52 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF52-DK)
 - [Board pinout](https://github.com/em-foundation/emscope/blob/docs-stable/docs/boards/nrf-52-dk.png)
 - [EM•Script project](https://github.com/em-foundation/emporium)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -64,19 +63,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 2.7 V |  2.3 µA | 14.9 µA |  6.3 µW |
+| 2.7 V |  2.4 µA | 17.7 µA |  6.5 µW |
+
+### 🟠&ensp;boundary / closure
+
+| accounting window | sleep window | event duty | closure residual | floor residual |
+|:---:|:---:|:---:|:---:|:---:|
+| 10.000 s | 0.500 s | 1.000% | 0.123% | -0.0 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 22.1 µJ |  0.0 µJ | 28.4 µJ |  2.5 J | 32.64 |
+| 22.1 µJ |  0.0 µJ | 28.5 µJ |  2.5 J | 32.44 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 22.1 µJ |  0.0 µJ | 84.8 µJ |  0.7 J | 109.14 |
+| 22.1 µJ |  0.0 µJ | 86.8 µJ |  0.7 J | 106.70 |
 
 ## Typical Event
 

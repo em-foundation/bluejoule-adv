@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 1V8</h3>
 
 
-<p align="right"><sub>captured on 2026-04-15 @ 21:13:18<br>generated on 2026-08-13 @ 14:48:43</sub></p>
+<p align="right"><sub>captured on 2026-04-15 @ 21:13:18<br>generated on 2026-09-16 @ 17:13:22</sub></p>
 
 ## Activity
 
@@ -64,19 +64,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 1.8 V |  0.9 µA |  0.6 µA |  1.6 µW |
+| 1.8 V |  1.2 µA |  0.8 µA |  2.2 µW |
+
+### 🟠&ensp;boundary / closure
+
+| accounting window | sleep window | event duty | closure residual | floor residual |
+|:---:|:---:|:---:|:---:|:---:|
+| 10.000 s | 0.500 s | 1.000% | 0.067% | -0.0 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 18.4 µJ |  0.2 µJ | 20.0 µJ |  1.7 J | 46.28 |
+| 18.4 µJ |  0.2 µJ | 20.6 µJ |  1.8 J | 45.00 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 18.4 µJ |  0.2 µJ | 34.7 µJ |  0.3 J | 266.63 |
+| 18.4 µJ |  0.2 µJ | 40.6 µJ |  0.4 J | 227.84 |
 
 ## Typical Event
 

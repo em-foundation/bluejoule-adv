@@ -3,7 +3,7 @@
     "schema_version": "1",
     "generator": {
         "name": "EM•Scope",
-        "version": "26.0.0"
+        "version": "26.1.1"
     },
     "units": {
         "time": "s",
@@ -83,7 +83,7 @@
         "subtitle": "Bench supply · 2V7",
         "device": "JS220",
         "created": "2025-09-11T01:20:33.464Z",
-        "generated": "2026-08-13T14:48:06.958Z",
+        "generated": "2026-09-16T17:13:01.088Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -97,33 +97,70 @@
         },
         "images": [
             "event-A.png"
-        ],
-        "build_artifacts": "../build"
+        ]
     },
     "events": {
         "count": 10,
-        "duration_avg": 0.0020000000000000005,
-        "duration_std": 4.336808689942018e-19,
-        "energy_avg": 0.00002210973388527648,
-        "energy_std": 2.3051234000297108e-8
+        "duration_avg": 0.009999999999999998,
+        "duration_std": 1.734723475976807e-18,
+        "energy_avg": 0.00002213946094006302,
+        "energy_std": 2.5731813383409303e-8
     },
     "sleep": {
-        "current_avg": 0.000002341730866223246,
-        "current_std": 0.000014908251700081193,
-        "power_avg": 0.0000062739230116118465
+        "current_avg": 0.0000024150751644740344,
+        "current_std": 0.00001774705875590401,
+        "power_avg": 0.000006470425729837655
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 10000,
+            "duration": 0.01,
+            "first_sample_offset": 988750,
+            "last_sample_end": 9999250,
+            "duration_total": 0.1,
+            "duration_avg": 0.009999999999999998,
+            "duration_std": 1.734723475976807e-18
+        },
+        "sleep_window": {
+            "sample_offset": 9488750,
+            "sample_width": 500000,
+            "start": 9.48875,
+            "end": 9.98875,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 488750,
+            "sample_width": 10000000,
+            "start": 0.48875,
+            "end": 10.48875,
+            "duration": 10,
+            "measured_current_avg": 0.000010667585953155347,
+            "measured_power_avg": 0.00002858040347642075
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 0.1,
+            "sleep_duration": 9.9,
+            "event_energy_total": 0.0002213946094006302,
+            "modeled_energy": 0.000285451824126023,
+            "modeled_power_avg": 0.0000285451824126023
+        },
+        "closure_residual": 0.0012323501257603005,
+        "floor_residual": -1.3934098948493739e-8
     },
     "periods": {
         "one_second": {
-            "event_energy": 0.00002210973388527648,
-            "energy_per_period": 0.000028371109050865102,
-            "energy_per_day": 2.4512638219947447,
-            "emeralds": 32.63622596726413
+            "event_energy": 0.00002213946094006302,
+            "energy_per_period": 0.000028545182412602298,
+            "energy_per_day": 2.4663037604488385,
+            "emeralds": 32.437204728358736
         },
         "ten_seconds": {
-            "event_energy": 0.00002210973388527648,
-            "energy_per_period": 0.00008483641615537172,
-            "energy_per_day": 0.7329866355824117,
-            "emeralds": 109.14250835751476
+            "event_energy": 0.00002213946094006302,
+            "energy_per_period": 0.00008677901398114119,
+            "energy_per_day": 0.7497706807970599,
+            "emeralds": 106.69929092846665
         }
     }
 }

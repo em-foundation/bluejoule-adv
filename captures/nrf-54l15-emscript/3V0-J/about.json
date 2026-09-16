@@ -79,7 +79,7 @@
         "subtitle": "Bench supply · 3V0",
         "device": "JS220",
         "created": "2026-09-04T15:24:05.725Z",
-        "generated": "2026-09-04T15:27:04.722Z",
+        "generated": "2026-09-16T17:13:10.472Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -97,10 +97,10 @@
     },
     "events": {
         "count": 10,
-        "duration_avg": 0.004999999999999999,
-        "duration_std": 8.673617379884035e-19,
-        "energy_avg": 0.000018124853109846886,
-        "energy_std": 3.0682305269697915e-8
+        "duration_avg": 0.009999999999999998,
+        "duration_std": 1.734723475976807e-18,
+        "energy_avg": 0.000018127428405755092,
+        "energy_std": 3.152752444874697e-8
     },
     "sleep": {
         "current_avg": 0.0000010376795632331195,
@@ -110,13 +110,13 @@
     "boundary": {
         "event_window": {
             "count": 10,
-            "sample_width": 5000,
-            "duration": 0.005,
+            "sample_width": 10000,
+            "duration": 0.01,
             "first_sample_offset": 1487750,
-            "last_sample_end": 10492750,
-            "duration_total": 0.05,
-            "duration_avg": 0.004999999999999999,
-            "duration_std": 8.673617379884035e-19
+            "last_sample_end": 10497750,
+            "duration_total": 0.1,
+            "duration_avg": 0.009999999999999998,
+            "duration_std": 1.734723475976807e-18
         },
         "sleep_window": {
             "sample_offset": 9737750,
@@ -136,27 +136,27 @@
         },
         "partition": {
             "event_count": 10,
-            "event_duration_total": 0.05,
-            "sleep_duration": 9.95,
-            "event_energy_total": 0.00018124853109846887,
-            "modeled_energy": 0.0002121891991970177,
-            "modeled_power_avg": 0.00002121891991970177
+            "event_duration_total": 0.1,
+            "sleep_duration": 9.9,
+            "event_energy_total": 0.00018127428405755093,
+            "modeled_energy": 0.00021205947141188596,
+            "modeled_power_avg": 0.000021205947141188596
         },
-        "closure_residual": 0.0081218421026026,
-        "floor_residual": 5.7435089590005236e-8
+        "closure_residual": 0.007505498696746825,
+        "floor_residual": 5.33483945378136e-8
     },
     "periods": {
         "one_second": {
-            "event_energy": 0.000018124853109846886,
-            "energy_per_period": 0.00002121891991970177,
-            "energy_per_day": 1.833314681062233,
-            "emeralds": 43.63680759576285
+            "event_energy": 0.000018127428405755092,
+            "energy_per_period": 0.000021205947141188596,
+            "energy_per_day": 1.8321938329986946,
+            "emeralds": 43.66350249583937
         },
         "ten_seconds": {
-            "event_energy": 0.000018124853109846886,
-            "energy_per_period": 0.00004920545387818817,
-            "energy_per_day": 0.42513512150754573,
-            "emeralds": 188.17546693464627
+            "event_energy": 0.000018127428405755092,
+            "energy_per_period": 0.00004919248109967499,
+            "energy_per_day": 0.4250230367011919,
+            "emeralds": 188.22509156425605
         }
     }
 }

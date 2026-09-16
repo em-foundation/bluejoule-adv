@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 3V0</h3>
 
 
-<p align="right"><sub>captured on 2025-11-03 @ 14:58:53<br>generated on 2026-08-13 @ 14:48:50</sub></p>
+<p align="right"><sub>captured on 2025-11-03 @ 14:58:53<br>generated on 2026-09-16 @ 17:13:27</sub></p>
 
 ## Activity
 
@@ -40,7 +40,6 @@
 - [LP-EM-CC2340R5 Development Kit](https://www.ti.com/tool/LP-EM-CC2340R5)
 - [CC2340R5 SoC](https://www.ti.com/product/CC2340R5)
 - [EM•Script project](https://github.com/em-foundation/emporium)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -65,17 +64,23 @@
 |:---:|:---:|:---:|:---:|
 | 3.0 V |  0.7 µA | 16.3 µA |  2.0 µW |
 
+### 🟠&ensp;boundary / closure
+
+| accounting window | sleep window | event duty | closure residual | floor residual |
+|:---:|:---:|:---:|:---:|:---:|
+| 10.000 s | 0.500 s | 1.000% | 1.357% |  0.1 µA |
+
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 16.6 µJ |  0.0 µJ | 18.6 µJ |  1.6 J | 49.77 |
+| 16.6 µJ |  0.0 µJ | 18.6 µJ |  1.6 J | 49.83 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 16.6 µJ |  0.0 µJ | 36.2 µJ |  0.3 J | 255.57 |
+| 16.6 µJ |  0.0 µJ | 36.2 µJ |  0.3 J | 255.64 |
 
 ## Typical Event
 
