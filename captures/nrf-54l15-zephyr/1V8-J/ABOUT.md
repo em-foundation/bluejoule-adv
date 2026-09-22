@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 1V8</h3>
 
 
-<p align="right"><sub>captured on 2025-10-22 @ 23:10:33<br>generated on 2026-09-22 @ 14:53:19</sub></p>
+<p align="right"><sub>captured on 2025-10-22 @ 23:10:33<br>generated on 2026-09-22 @ 16:24:39</sub></p>
 
 ## Activity
 
@@ -67,28 +67,27 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 1.8 V |  4.4 µA |  1.4 µA |  8.0 µW |
+| 1.8 V |  4.7 µA |  1.0 µA |  8.4 µW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.002% |  0.3 µA |
+| 10.000 s | 0.500 s | 10.000% | 0.002% | -0.0 µA |
 
-### 🟠&ensp;1&thinsp;s event period
-
-| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
-|:---:|:---:|:---:|:---:|:---:|
-| 15.5 µJ |  0.0 µJ | 23.4 µJ |  2.0 J | 39.61 |
-
-### 🟠&ensp;10&thinsp;s event period
+### 🟠&ensp;1&thinsp;s score
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 15.5 µJ |  0.0 µJ | 95.3 µJ |  0.8 J | 97.16 |
+| 15.8 µJ |  0.0 µJ | 23.4 µJ |  2.0 J | 39.61 |
+
+### 🟠&ensp;10&thinsp;s projection
+
+| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
+|:---:|:---:|:---:|:---:|:---:|
+| 15.8 µJ |  0.0 µJ | 99.4 µJ |  0.9 J | 93.15 |
 
 ## Typical Event
 
-<p align="center"><img src="event-C.png" alt="Event" width="900"></p>
-<p align="center"><img src="event-D.png" alt="Event" width="900"></p>
+<p align="center"><img src="event-B.png" alt="Event" width="900"></p>
 

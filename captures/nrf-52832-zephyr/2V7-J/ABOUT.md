@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 2V7</h3>
 
 
-<p align="right"><sub>captured on 2025-10-26 @ 13:44:26<br>generated on 2026-09-22 @ 14:53:11</sub></p>
+<p align="right"><sub>captured on 2025-10-26 @ 13:44:26<br>generated on 2026-09-22 @ 16:24:32</sub></p>
 
 ## Activity
 
@@ -64,27 +64,27 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 2.7 V |  1.4 µA | 58.7 µA |  3.7 µW |
+| 2.7 V |  1.4 µA | 54.2 µA |  3.8 µW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.002% | -0.1 µA |
+| 10.000 s | 0.500 s | 10.000% | 0.001% | -0.1 µA |
 
-### 🟠&ensp;1&thinsp;s event period
-
-| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
-|:---:|:---:|:---:|:---:|:---:|
-| 26.8 µJ |  0.1 µJ | 30.5 µJ |  2.6 J | 30.39 |
-
-### 🟠&ensp;10&thinsp;s event period
+### 🟠&ensp;1&thinsp;s score
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 26.8 µJ |  0.1 µJ | 64.1 µJ |  0.6 J | 144.55 |
+| 27.1 µJ |  0.1 µJ | 30.5 µJ |  2.6 J | 30.39 |
+
+### 🟠&ensp;10&thinsp;s projection
+
+| &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
+|:---:|:---:|:---:|:---:|:---:|
+| 27.1 µJ |  0.1 µJ | 64.7 µJ |  0.6 J | 143.20 |
 
 ## Typical Event
 
-<p align="center"><img src="event-A.png" alt="Event" width="900"></p>
+<p align="center"><img src="event-B.png" alt="Event" width="900"></p>
 

@@ -3,7 +3,7 @@
     "schema_version": "1",
     "generator": {
         "name": "EM•Scope",
-        "version": "26.2.1"
+        "version": "26.2.2"
     },
     "units": {
         "time": "s",
@@ -79,7 +79,7 @@
         "subtitle": "Bench supply · 1V8",
         "device": "JS220",
         "created": "2025-10-22T23:33:00.190Z",
-        "generated": "2026-09-22T14:53:15.656Z",
+        "generated": "2026-09-22T16:24:35.926Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -92,31 +92,31 @@
             "droop": 0.015830703449987826
         },
         "images": [
-            "event-C.png"
+            "event-B.png"
         ]
     },
     "events": {
         "count": 10,
-        "duration_avg": 0.009999999999999998,
-        "duration_std": 1.734723475976807e-18,
-        "energy_avg": 0.000014794031266674584,
-        "energy_std": 2.8008337665260292e-8
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000015344792148846038,
+        "energy_std": 2.521645563947335e-8
     },
     "sleep": {
-        "current_avg": 0.00000361840964751224,
-        "current_std": 0.000001608583379512538,
-        "power_avg": 0.000006508253283060708
+        "current_avg": 0.0000036400678754370247,
+        "current_std": 0.0000012957099107923452,
+        "power_avg": 0.000006547208859329876
     },
     "boundary": {
         "event_window": {
             "count": 10,
-            "sample_width": 10000,
-            "duration": 0.01,
+            "sample_width": 100000,
+            "duration": 0.1,
             "first_sample_offset": 997750,
-            "last_sample_end": 10007750,
-            "duration_total": 0.1,
-            "duration_avg": 0.009999999999999998,
-            "duration_std": 1.734723475976807e-18
+            "last_sample_end": 10097750,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
         },
         "sleep_window": {
             "sample_offset": 6497750,
@@ -136,29 +136,29 @@
         },
         "partition": {
             "event_count": 10,
-            "event_duration_total": 0.1,
-            "sleep_duration": 9.9,
-            "sleep_current_avg": 0.00000361840964751224,
-            "sleep_current_std": 0.000001608583379512538,
-            "event_energy_total": 0.00014794031266674584,
-            "modeled_energy": 0.00021237202016904686,
-            "modeled_power_avg": 0.000021237202016904686
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.0000036400678754370247,
+            "sleep_current_std": 0.0000012957099107923452,
+            "event_energy_total": 0.00015344792148846038,
+            "modeled_energy": 0.00021237280122242926,
+            "modeled_power_avg": 0.000021237280122242927
         },
-        "closure_residual": 0.000024518791591731974,
-        "floor_residual": 1.3547290822630962e-9
+        "closure_residual": 0.00002084112147634713,
+        "floor_residual": -2.0303498842521464e-8
     },
-    "periods": {
-        "one_second": {
-            "event_energy": 0.000014794031266674584,
-            "energy_per_period": 0.000021237202016904683,
-            "energy_per_day": 1.8348942542605646,
-            "emeralds": 43.59924274341293
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000015344792148846038,
+            "energy_per_period": 0.000021237280122242927,
+            "energy_per_day": 1.834901002561789,
+            "emeralds": 43.59908239643902
         },
-        "ten_seconds": {
-            "event_energy": 0.000014794031266674584,
-            "energy_per_period": 0.00007981148156445106,
-            "energy_per_day": 0.6895712007168572,
-            "emeralds": 116.0141257593624
+        "adv-10s": {
+            "event_energy": 0.000015344792148846038,
+            "energy_per_period": 0.00008016215985621181,
+            "energy_per_day": 0.6926010611576701,
+            "emeralds": 115.50660905179882
         }
     }
 }

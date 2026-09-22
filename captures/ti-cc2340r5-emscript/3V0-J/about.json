@@ -3,7 +3,7 @@
     "schema_version": "1",
     "generator": {
         "name": "EM•Scope",
-        "version": "26.2.1"
+        "version": "26.2.2"
     },
     "units": {
         "time": "s",
@@ -79,7 +79,7 @@
         "subtitle": "Bench supply · 3V0",
         "device": "JS220",
         "created": "2025-11-03T14:58:53.878Z",
-        "generated": "2026-09-22T14:53:34.635Z",
+        "generated": "2026-09-22T16:24:56.317Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -92,31 +92,31 @@
             "droop": 0.01800730573381104
         },
         "images": [
-            "event-A.png"
+            "event-B.png"
         ]
     },
     "events": {
         "count": 10,
-        "duration_avg": 0.009999999999999998,
-        "duration_std": 1.734723475976807e-18,
-        "energy_avg": 0.000016642634163064076,
-        "energy_std": 3.161034370539679e-8
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000016681847332212477,
+        "energy_std": 3.2761093037143015e-8
     },
     "sleep": {
-        "current_avg": 5.695990278300914e-7,
-        "current_std": 0.00010180354624244968,
-        "power_avg": 0.0000017081728126864025
+        "current_avg": 6.12040544860065e-7,
+        "current_std": 0.0001067722361814286,
+        "power_avg": 0.0000018354508485986997
     },
     "boundary": {
         "event_window": {
             "count": 10,
-            "sample_width": 10000,
-            "duration": 0.01,
+            "sample_width": 100000,
+            "duration": 0.1,
             "first_sample_offset": 609750,
-            "last_sample_end": 9620000,
-            "duration_total": 0.1,
-            "duration_avg": 0.009999999999999998,
-            "duration_std": 1.734723475976807e-18
+            "last_sample_end": 9710000,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
         },
         "sleep_window": {
             "sample_offset": 5109750,
@@ -136,29 +136,29 @@
         },
         "partition": {
             "event_count": 10,
-            "event_duration_total": 0.1,
-            "sleep_duration": 9.9,
-            "sleep_current_avg": 5.695990278300914e-7,
-            "sleep_current_std": 0.00010180354624244968,
-            "event_energy_total": 0.00016642634163064075,
-            "modeled_energy": 0.00018333725247623615,
-            "modeled_power_avg": 0.000018333725247623616
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 6.12040544860065e-7,
+            "sleep_current_std": 0.0001067722361814286,
+            "event_energy_total": 0.00016681847332212477,
+            "modeled_energy": 0.00018333753095951306,
+            "modeled_power_avg": 0.000018333753095951305
         },
-        "closure_residual": 0.00000874871425801929,
-        "floor_residual": 8.38833418388815e-8
+        "closure_residual": 0.000007229760326110782,
+        "floor_residual": 4.144182480890792e-8
     },
-    "periods": {
-        "one_second": {
-            "event_energy": 0.000016642634163064076,
-            "energy_per_period": 0.000018333725247623616,
-            "energy_per_day": 1.5840338613946805,
-            "emeralds": 50.503970874437684
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000016681847332212477,
+            "energy_per_period": 0.000018333753095951305,
+            "energy_per_day": 1.5840362674901927,
+            "emeralds": 50.50389416067793
         },
-        "ten_seconds": {
-            "event_energy": 0.000016642634163064076,
-            "energy_per_period": 0.000033707280561801236,
-            "energy_per_day": 0.2912309040539627,
-            "emeralds": 274.69612217107516
+        "adv-10s": {
+            "event_energy": 0.000016681847332212477,
+            "energy_per_period": 0.000034852810733339604,
+            "energy_per_day": 0.3011282847360542,
+            "emeralds": 265.66750469860983
         }
     }
 }
