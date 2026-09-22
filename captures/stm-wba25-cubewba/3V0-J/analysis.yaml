@@ -4,41 +4,41 @@ span:
 events:
     -
         offset: 1233000
-        width: 10000
+        width: 100000
     -
         offset: 2229500
-        width: 10000
+        width: 100000
     -
         offset: 3236000
-        width: 10000
+        width: 100000
     -
         offset: 4239000
-        width: 10000
+        width: 100000
     -
         offset: 5246000
-        width: 10000
+        width: 100000
     -
         offset: 6255500
-        width: 10000
+        width: 100000
     -
         offset: 7261000
-        width: 10000
+        width: 100000
     -
         offset: 8264750
-        width: 10000
+        width: 100000
     -
         offset: 9272250
-        width: 10000
+        width: 100000
     -
         offset: 10279250
-        width: 10000
-event_width: 10000
+        width: 100000
+event_width: 100000
 sleep:
     avg: 0.0000012204519734246855
     std: 5.737757677988472e-7
     'off': 9483000
     width: 500000
 options:
-    - '--event-window 10'
     - '--trim 10'
-version: 26.1.1
+    - '--event-window 100'
+version: 26.2.2
