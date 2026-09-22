@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 1V8</h3>
 
 
-<p align="right"><sub>captured on 2025-10-07 @ 01:37:09<br>generated on 2026-09-16 @ 17:13:19</sub></p>
+<p align="right"><sub>captured on 2025-10-07 @ 01:37:09<br>generated on 2026-09-22 @ 14:53:26</sub></p>
 
 ## Activity
 
@@ -40,7 +40,6 @@
 - [xG22-EK8200A](https://www.silabs.com/development-tools/wireless/efr32xg22e-energy-harvesting-explorer-kit?tab=overview)
 - [EFR32xG22E SoC](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs)
 - [Simplicity Studio](https://www.silabs.com/software-and-tools/simplicity-studio/simplicity-studio-version-5)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -63,25 +62,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 1.8 V |  2.7 µA |  1.1 µA |  4.8 µW |
+| 1.8 V |  2.6 µA |  1.8 µA |  4.6 µW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.589% |  0.1 µA |
+| 10.000 s | 0.500 s | 1.000% | 0.002% |  0.1 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 21.7 µJ |  0.2 µJ | 26.4 µJ |  2.3 J | 35.08 |
+| 21.7 µJ |  0.2 µJ | 26.2 µJ |  2.3 J | 35.28 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 21.7 µJ |  0.2 µJ | 69.5 µJ |  0.6 J | 133.28 |
+| 21.7 µJ |  0.2 µJ | 67.9 µJ |  0.6 J | 136.36 |
 
 ## Typical Event
 

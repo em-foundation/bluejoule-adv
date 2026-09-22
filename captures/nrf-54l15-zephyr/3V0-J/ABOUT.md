@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 3V0</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-09-16 @ 17:13:14</sub></p>
+<p align="right"><sub>captured on 2025-10-27 @ 02:08:08<br>generated on 2026-09-22 @ 14:53:21</sub></p>
 
 ## Activity
 
@@ -45,7 +45,6 @@
 - [nRF54L15 product page](https://www.nordicsemi.com/Products/nRF54L15)
 - [nRF54L15 DK](https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK)
 - [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -68,25 +67,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 3.0 V |  2.8 µA |  1.0 µA |  8.3 µW |
+| 3.0 V |  2.7 µA |  1.0 µA |  8.2 µW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.164% |  0.0 µA |
+| 10.000 s | 0.500 s | 1.000% | 0.001% |  0.0 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 16.4 µJ |  0.0 µJ | 24.6 µJ |  2.1 J | 37.70 |
+| 16.4 µJ |  0.0 µJ | 24.5 µJ |  2.1 J | 37.76 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 16.4 µJ |  0.0 µJ | 99.0 µJ |  0.9 J | 93.50 |
+| 16.4 µJ |  0.0 µJ | 98.6 µJ |  0.9 J | 93.89 |
 
 ## Typical Event
 

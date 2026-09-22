@@ -3,7 +3,7 @@
     "schema_version": "1",
     "generator": {
         "name": "EM•Scope",
-        "version": "26.1.1"
+        "version": "26.2.1"
     },
     "units": {
         "time": "s",
@@ -79,7 +79,7 @@
         "subtitle": "Bench supply · 1V8",
         "device": "JS220",
         "created": "2025-10-22T23:33:00.190Z",
-        "generated": "2026-09-16T22:02:10.271Z",
+        "generated": "2026-09-22T14:53:15.656Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -103,9 +103,9 @@
         "energy_std": 2.8008337665260292e-8
     },
     "sleep": {
-        "current_avg": 0.000003619764376594503,
-        "current_std": 0.0000012699853818954446,
-        "power_avg": 0.000006510689966813018
+        "current_avg": 0.00000361840964751224,
+        "current_std": 0.000001608583379512538,
+        "power_avg": 0.000006508253283060708
     },
     "boundary": {
         "event_window": {
@@ -138,25 +138,27 @@
             "event_count": 10,
             "event_duration_total": 0.1,
             "sleep_duration": 9.9,
+            "sleep_current_avg": 0.00000361840964751224,
+            "sleep_current_std": 0.000001608583379512538,
             "event_energy_total": 0.00014794031266674584,
-            "modeled_energy": 0.00021239614333819472,
-            "modeled_power_avg": 0.000021239614333819473
+            "modeled_energy": 0.00021237202016904686,
+            "modeled_power_avg": 0.000021237202016904686
         },
-        "closure_residual": 0.00008906762933936917,
+        "closure_residual": 0.000024518791591731974,
         "floor_residual": 1.3547290822630962e-9
     },
     "periods": {
         "one_second": {
             "event_energy": 0.000014794031266674584,
-            "energy_per_period": 0.00002123961433381947,
-            "energy_per_day": 1.8351026784420021,
-            "emeralds": 43.59429090252313
+            "energy_per_period": 0.000021237202016904683,
+            "energy_per_day": 1.8348942542605646,
+            "emeralds": 43.59924274341293
         },
         "ten_seconds": {
             "event_energy": 0.000014794031266674584,
-            "energy_per_period": 0.00007983582403513665,
-            "energy_per_day": 0.6897815196635806,
-            "emeralds": 115.97875228524171
+            "energy_per_period": 0.00007981148156445106,
+            "energy_per_day": 0.6895712007168572,
+            "emeralds": 116.0141257593624
         }
     }
 }

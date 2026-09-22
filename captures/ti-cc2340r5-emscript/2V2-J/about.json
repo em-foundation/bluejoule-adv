@@ -3,7 +3,7 @@
     "schema_version": "1",
     "generator": {
         "name": "EM•Scope",
-        "version": "26.1.1"
+        "version": "26.2.1"
     },
     "units": {
         "time": "s",
@@ -79,7 +79,7 @@
         "subtitle": "Bench supply · 2V2",
         "device": "JS220",
         "created": "2025-11-11T18:23:25.320Z",
-        "generated": "2026-09-16T17:13:25.694Z",
+        "generated": "2026-09-22T14:53:33.125Z",
         "duration": 12,
         "sampling_rate": 1000000,
         "sample_count": 12000000,
@@ -103,9 +103,9 @@
         "energy_std": 2.3668722966448813e-8
     },
     "sleep": {
-        "current_avg": 4.474055726699788e-7,
-        "current_std": 0.00001458938018961694,
-        "power_avg": 9.835939474663149e-7
+        "current_avg": 6.416630630635403e-7,
+        "current_std": 0.00007632276066519127,
+        "power_avg": 0.0000014106572284640302
     },
     "boundary": {
         "event_window": {
@@ -138,25 +138,27 @@
             "event_count": 10,
             "event_duration_total": 0.1,
             "sleep_duration": 9.9,
+            "sleep_current_avg": 6.416630630635403e-7,
+            "sleep_current_std": 0.00007632276066519127,
             "event_energy_total": 0.00016095971230275106,
-            "modeled_energy": 0.00017069729238266757,
-            "modeled_power_avg": 0.000017069729238266756
+            "modeled_energy": 0.00017492521886454496,
+            "modeled_power_avg": 0.000017492521886454497
         },
-        "closure_residual": 0.024198729232966634,
+        "closure_residual": 0.000029534888179913672,
         "floor_residual": -1.9425749039356147e-7
     },
     "periods": {
         "one_second": {
             "event_energy": 0.000016095971230275106,
-            "energy_per_period": 0.00001706972923826676,
-            "energy_per_day": 1.474824606186248,
-            "emeralds": 54.24373831602401
+            "energy_per_period": 0.000017492521886454497,
+            "energy_per_day": 1.5113538909896687,
+            "emeralds": 52.93267214048339
         },
         "ten_seconds": {
             "event_energy": 0.000016095971230275106,
-            "energy_per_period": 0.000025922074765463592,
-            "energy_per_day": 0.22396672597360542,
-            "emeralds": 357.1959167248265
+            "energy_per_period": 0.00003018843694263077,
+            "energy_per_day": 0.26082809518432987,
+            "emeralds": 306.7154247454178
         }
     }
 }

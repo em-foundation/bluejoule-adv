@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 1V5</h3>
 
 
-<p align="right"><sub>captured on 2025-10-28 @ 03:40:39<br>generated on 2026-09-16 @ 17:12:54</sub></p>
+<p align="right"><sub>captured on 2025-10-28 @ 03:40:39<br>generated on 2026-09-22 @ 14:53:02</sub></p>
 
 ## Activity
 
@@ -40,7 +40,6 @@
 - [EM9305 SOC DVK](https://www.emmicroelectronic.com/sites/default/files/products/datasheets/EM9305%20SOC%20DVK%20FACTSHEET.pdf)
 - [EM9305 SoC](https://www.emmicroelectronic.com/product/standard-protocols/em-bleu-em9305)
 - [EM Bleu SDK](https://www.emmicroelectronic.com/contact-us)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -63,25 +62,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 1.5 V |  0.5 µA |  0.7 µA | 763.9 nW |
+| 1.5 V |  0.5 µA |  0.8 µA | 768.6 nW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.034% | -0.0 µA |
+| 10.000 s | 0.500 s | 1.000% | 0.004% | -0.0 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 15.1 µJ |  0.0 µJ | 15.8 µJ |  1.4 J | 58.56 |
+| 15.1 µJ |  0.0 µJ | 15.8 µJ |  1.4 J | 58.54 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 15.1 µJ |  0.0 µJ | 22.7 µJ |  0.2 J | 408.14 |
+| 15.1 µJ |  0.0 µJ | 22.7 µJ |  0.2 J | 407.29 |
 
 ## Typical Event
 

@@ -4,7 +4,7 @@
 <h3 align="center">Bench supply · 3V0</h3>
 
 
-<p align="right"><sub>captured on 2025-10-27 @ 03:16:25<br>generated on 2026-09-16 @ 17:13:30</sub></p>
+<p align="right"><sub>captured on 2025-10-27 @ 03:16:25<br>generated on 2026-09-22 @ 14:53:37</sub></p>
 
 ## Activity
 
@@ -44,7 +44,6 @@
 - [Code Composer Studio IDE](https://www.ti.com/tool/CCSTUDIO)
 - [TI Arm Clang compiler](https://www.ti.com/tool/download/ARM-CGT-CLANG)
 - [SimpleLink SDK](https://www.ti.com/tool/SIMPLELINK-LOWPOWER-SDK)
-- [BUILD ARTIFACTS](../build)
 
 ## Power Source
 
@@ -67,25 +66,25 @@
 
 | supply voltage | &emsp;current (avg)&emsp; | &emsp;current (std)&emsp; | &emsp;average power&emsp;
 |:---:|:---:|:---:|:---:|
-| 3.1 V |  0.5 µA | 13.3 µA |  1.7 µW |
+| 3.1 V |  0.6 µA | 99.9 µA |  1.8 µW |
 
 ### 🟠&ensp;boundary / closure
 
 | accounting window | sleep window | event duty | closure residual | floor residual |
 |:---:|:---:|:---:|:---:|:---:|
-| 10.000 s | 0.500 s | 1.000% | 0.317% | -0.0 µA |
+| 10.000 s | 0.500 s | 1.000% | 0.000% | -0.0 µA |
 
 ### 🟠&ensp;1&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 30.5 µJ |  0.1 µJ | 32.1 µJ |  2.8 J | 28.81 |
+| 30.5 µJ |  0.1 µJ | 32.2 µJ |  2.8 J | 28.72 |
 
 ### 🟠&ensp;10&thinsp;s event period
 
 | &emsp;&emsp;event energy (avg)&emsp;&emsp; | &emsp;&emsp;event energy (std)&emsp;&emsp; | &emsp;&emsp;energy per period&emsp;&emsp; | &emsp;&emsp;energy per day&emsp;&emsp; | &emsp;&emsp;&emsp;**EM&bull;eralds**&emsp;&emsp;&emsp;
 |:---:|:---:|:---:|:---:|:---:|
-| 30.5 µJ |  0.1 µJ | 47.0 µJ |  0.4 J | 196.82 |
+| 30.5 µJ |  0.1 µJ | 48.1 µJ |  0.4 J | 192.60 |
 
 ## Typical Event
 
