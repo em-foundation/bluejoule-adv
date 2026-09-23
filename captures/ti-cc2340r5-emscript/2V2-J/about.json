@@ -1,0 +1,164 @@
+{
+    "id": "bluejoule-adv:ti-cc2340r5-emscript:2V2-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "ti-cc2340r5-emscript",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/ti-cc2340r5-emscript.md",
+        "title": "Texas Instruments CC2340R5 LaunchPad · EM•Script",
+        "factoids": [
+            "Board: Texas Instruments CC2340R5 LaunchPad",
+            "MCU: Texas Instruments CC2340R5",
+            "CPU: 48 MHz Arm Cortex-M0+",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "LP-EM-CC2340R5 Development Kit",
+                "url": "https://www.ti.com/tool/LP-EM-CC2340R5"
+            },
+            {
+                "title": "CC2340R5 SoC",
+                "url": "https://www.ti.com/product/CC2340R5"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "2V2-J",
+        "subtitle": "Bench supply · 2V2",
+        "device": "JS220",
+        "created": "2025-11-11T18:23:25.320Z",
+        "generated": "2026-09-22T16:24:54.735Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.198439195999569,
+            "min": 2.1861937046051025,
+            "max": 2.203486204147339,
+            "std": 0.0010521805251365896,
+            "droop": 0.012245491394466512
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000016120049889799955,
+        "energy_std": 2.1282404462550718e-8
+    },
+    "sleep": {
+        "current_avg": 6.936837235569126e-7,
+        "current_std": 0.00008004750213381212,
+        "power_avg": 0.0000015250214874944463
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 1427750,
+            "last_sample_end": 10528000,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 4677750,
+            "sample_width": 500000,
+            "start": 4.67775,
+            "end": 5.17775,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 927750,
+            "sample_width": 10000000,
+            "start": 0.92775,
+            "end": 10.92775,
+            "duration": 10,
+            "measured_current_avg": 0.000007957026318136649,
+            "measured_power_avg": 0.000017493038541391744
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 6.936837235569126e-7,
+            "sleep_current_std": 0.00008004750213381212,
+            "event_energy_total": 0.00016120049889799953,
+            "modeled_energy": 0.00017492569228544954,
+            "modeled_power_avg": 0.000017492569228544954
+        },
+        "closure_residual": 0.00002682854929291475,
+        "floor_residual": -2.462781508869338e-7
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000016120049889799955,
+            "energy_per_period": 0.000017492569228544957,
+            "energy_per_day": 1.5113579813462843,
+            "emeralds": 52.93252888289098
+        },
+        "adv-10s": {
+            "event_energy": 0.000016120049889799955,
+            "energy_per_period": 0.000031217762615994974,
+            "energy_per_day": 0.26972146900219657,
+            "emeralds": 296.60227009718864
+        }
+    }
+}

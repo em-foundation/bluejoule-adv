@@ -1,0 +1,164 @@
+{
+    "id": "bluejoule-adv:nrf-54l15-emscript:3V0-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "nrf-54l15-emscript",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-54l15-emscript.md",
+        "title": "Nordic nRF54L15 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF54L15",
+            "CPU: Arm Cortex-M33, 128 MHz",
+            "Flash: 1.5 MB",
+            "SRAM: 256 KB",
+            "Board: Nordic nRF54L15 DK",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "nRF54L15 product page",
+                "url": "https://www.nordicsemi.com/Products/nRF54L15"
+            },
+            {
+                "title": "nRF54L15 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF54L15-DK"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "3V0-J",
+        "subtitle": "Bench supply · 3V0",
+        "device": "JS220",
+        "created": "2026-09-04T15:24:05.725Z",
+        "generated": "2026-09-22T16:24:37.593Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.9967005176314503,
+            "min": 2.9571664333343506,
+            "max": 3.0218255519866943,
+            "std": 0.0009250795515401691,
+            "droop": 0.0395340842970997
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000018318436277040153,
+        "energy_std": 3.164331398324353e-8
+    },
+    "sleep": {
+        "current_avg": 0.0000010119530898001458,
+        "current_std": 9.372004245651421e-7,
+        "power_avg": 0.0000030325203480228427
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 1487750,
+            "last_sample_end": 10587750,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 9737750,
+            "sample_width": 500000,
+            "start": 9.73775,
+            "end": 10.23775,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 987750,
+            "sample_width": 10000000,
+            "start": 0.98775,
+            "end": 10.98775,
+            "duration": 10,
+            "measured_current_avg": 0.000007023715414271437,
+            "measured_power_avg": 0.00002104797161764321
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.0000010119530898001458,
+            "sleep_current_std": 9.372004245651421e-7,
+            "event_energy_total": 0.00018318436277040153,
+            "modeled_energy": 0.0002104770459026071,
+            "modeled_power_avg": 0.000021047704590260713
+        },
+        "closure_residual": 0.000012686608826230533,
+        "floor_residual": 2.572647343297362e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000018318436277040153,
+            "energy_per_period": 0.000021047704590260713,
+            "energy_per_day": 1.8185216765985255,
+            "emeralds": 43.991776963383195
+        },
+        "adv-10s": {
+            "event_energy": 0.000018318436277040153,
+            "energy_per_period": 0.000048340387722466297,
+            "energy_per_day": 0.4176609499221088,
+            "emeralds": 191.54292498477417
+        }
+    }
+}

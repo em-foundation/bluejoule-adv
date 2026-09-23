@@ -1,0 +1,164 @@
+{
+    "id": "bluejoule-adv:inp-100-nanobeacon:1V5-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "inp-100-nanobeacon",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/inp-100-nanobeacon.md",
+        "title": "InPlay NanoBeacon™ IN100 Development Kit · NanoBeacon Config Tool",
+        "factoids": [
+            "Board: InPlay NanoBeacon™ IN100 Development Kit",
+            "Device: InPlay IN100",
+            "Architecture: Configurable ASIC",
+            "OTP: 4 Kb",
+            "SRAM: 4 KB",
+            "Configuration tool: NanoBeacon Config Tool",
+            "NanoBeacon Config Tool: 3.2.29"
+        ],
+        "references": [
+            {
+                "title": "IN100 Development Kit",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "IN100 SoC",
+                "url": "https://inplay-tech.com/in100"
+            },
+            {
+                "title": "NanoBeacon Config Tool",
+                "url": "https://inplay-tech.com/nanobeacon-config-tool"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "1V5-J",
+        "subtitle": "Bench supply · 1V5",
+        "device": "JS220",
+        "created": "2025-10-26T12:53:33.210Z",
+        "generated": "2026-09-22T16:24:25.686Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 1.4987809505591179,
+            "min": 1.4854403734207153,
+            "max": 1.502756118774414,
+            "std": 0.0009139949777081058,
+            "droop": 0.013340577138402532
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000017357790021556075,
+        "energy_std": 4.064287687470491e-8
+    },
+    "sleep": {
+        "current_avg": 4.456848670831985e-7,
+        "current_std": 7.789507040796519e-7,
+        "power_avg": 6.679839887367704e-7
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 690250,
+            "last_sample_end": 9763000,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 6940250,
+            "sample_width": 500000,
+            "start": 6.94025,
+            "end": 7.44025,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 190250,
+            "sample_width": 10000000,
+            "start": 0.19025,
+            "end": 10.19025,
+            "duration": 10,
+            "measured_current_avg": 0.000011982797607796359,
+            "measured_power_avg": 0.00001795958878897055
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 4.456848670831985e-7,
+            "sleep_current_std": 7.789507040796519e-7,
+            "event_energy_total": 0.00017357790021556074,
+            "modeled_energy": 0.00017958975611419168,
+            "modeled_power_avg": 0.000017958975611419166
+        },
+        "closure_residual": 0.00003414207076726575,
+        "floor_residual": -6.842061337600425e-10
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000017357790021556075,
+            "energy_per_period": 0.00001795897561141917,
+            "energy_per_day": 1.5516554928266162,
+            "emeralds": 51.557836368861615
+        },
+        "adv-10s": {
+            "event_energy": 0.000017357790021556075,
+            "energy_per_period": 0.0000239708315100501,
+            "energy_per_day": 0.20710798424683285,
+            "emeralds": 386.2719261689853
+        }
+    }
+}

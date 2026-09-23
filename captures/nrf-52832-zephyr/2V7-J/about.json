@@ -1,0 +1,169 @@
+{
+    "id": "bluejoule-adv:nrf-52832-zephyr:2V7-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "nrf-52832-zephyr",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-52832-zephyr.md",
+        "title": "Nordic nRF52 DK · Zephyr",
+        "factoids": [
+            "MCU: Nordic nRF52832",
+            "CPU: 64 MHz Arm Cortex-M4",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Board: Nordic nRF52 Development Kit",
+            "Software stack: Zephyr",
+            "nRF Connect SDK: 3.0.2",
+            "Toolchain: nRF Connect SDK Toolchain 3.0.2"
+        ],
+        "references": [
+            {
+                "title": "Nordic nRF52832",
+                "url": "https://www.nordicsemi.com/Products/nRF52832"
+            },
+            {
+                "title": "Nordic nRF52 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52-DK"
+            },
+            {
+                "title": "Board pinout",
+                "url": "https://github.com/em-foundation/emscope/blob/docs-stable/docs/boards/nrf-52-dk.png"
+            },
+            {
+                "title": "nRF Connect SDK",
+                "url": "https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "2V7-J",
+        "subtitle": "Bench supply · 2V7",
+        "device": "JS220",
+        "created": "2025-10-26T13:44:26.125Z",
+        "generated": "2026-09-22T16:24:32.077Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.6971027028722174,
+            "min": 2.687946319580078,
+            "max": 2.70271372795105,
+            "std": 0.00088328486545896,
+            "droop": 0.009156383292139303
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000027053330656879596,
+        "energy_std": 5.8354437960180526e-8
+    },
+    "sleep": {
+        "current_avg": 0.0000014083498243449464,
+        "current_std": 0.0000542471632226607,
+        "power_avg": 0.0000037984641178303675
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 610750,
+            "last_sample_end": 9749500,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 5110750,
+            "sample_width": 500000,
+            "start": 5.11075,
+            "end": 5.61075,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 110750,
+            "sample_width": 10000000,
+            "start": 0.11075,
+            "end": 10.11075,
+            "duration": 10,
+            "measured_current_avg": 0.000011298192741068525,
+            "measured_power_avg": 0.00003047238617950719
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.0000014083498243449464,
+            "sleep_current_std": 0.0000542471632226607,
+            "event_energy_total": 0.00027053330656879595,
+            "modeled_energy": 0.00030471948362926924,
+            "modeled_power_avg": 0.000030471948362926923
+        },
+        "closure_residual": 0.000014367650032041547,
+        "floor_residual": -9.131312086978576e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000027053330656879596,
+            "energy_per_period": 0.000030471948362926926,
+            "energy_per_day": 2.6327763385568863,
+            "emeralds": 30.38617402792776
+        },
+        "adv-10s": {
+            "event_energy": 0.000027053330656879596,
+            "energy_per_period": 0.00006465812542340024,
+            "energy_per_day": 0.5586462036581781,
+            "emeralds": 143.20333598641983
+        }
+    }
+}

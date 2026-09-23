@@ -1,0 +1,174 @@
+{
+    "id": "bluejoule-adv:ti-cc2340r5-simplelink:3V0-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "ti-cc2340r5-simplelink",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/ti-cc2340r5-simplelink.md",
+        "title": "Texas Instruments CC2340R5 LaunchPad · SimpleLink SDK",
+        "factoids": [
+            "Board: Texas Instruments CC2340R5 LaunchPad",
+            "MCU: Texas Instruments CC2340R5",
+            "CPU: 48 MHz Arm Cortex-M0+",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Development environment: Code Composer Studio IDE",
+            "Code Composer Studio IDE: 12.4.0",
+            "Compiler: TI Arm Clang 2.1.3",
+            "SimpleLink SDK: 8.10.0"
+        ],
+        "references": [
+            {
+                "title": "LP-EM-CC2340R5 Development Kit",
+                "url": "https://www.ti.com/tool/LP-EM-CC2340R5"
+            },
+            {
+                "title": "CC2340R5 SoC",
+                "url": "https://www.ti.com/product/CC2340R5"
+            },
+            {
+                "title": "Code Composer Studio IDE",
+                "url": "https://www.ti.com/tool/CCSTUDIO"
+            },
+            {
+                "title": "TI Arm Clang compiler",
+                "url": "https://www.ti.com/tool/download/ARM-CGT-CLANG"
+            },
+            {
+                "title": "SimpleLink SDK",
+                "url": "https://www.ti.com/tool/SIMPLELINK-LOWPOWER-SDK"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "3V0-J",
+        "subtitle": "Bench supply · 3V0",
+        "device": "JS220",
+        "created": "2025-10-27T03:16:25.671Z",
+        "generated": "2026-09-22T16:25:00.514Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 3.1183141045320277,
+            "min": 3.1021945476531982,
+            "max": 3.1217432022094727,
+            "std": 0.0006614370011089208,
+            "droop": 0.01611955687882949
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.00003053775960512502,
+        "energy_std": 1.1292902505951656e-7
+    },
+    "sleep": {
+        "current_avg": 6.081985198478732e-7,
+        "current_std": 0.00010475305547286939,
+        "power_avg": 0.0000018965540227971254
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 1178250,
+            "last_sample_end": 10312250,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 7428250,
+            "sample_width": 500000,
+            "start": 7.42825,
+            "end": 7.92825,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 678250,
+            "sample_width": 10000000,
+            "start": 0.67825,
+            "end": 10.67825,
+            "duration": 10,
+            "measured_current_avg": 0.000010340424379126622,
+            "measured_power_avg": 0.00003224469118827738
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 6.081985198478732e-7,
+            "sleep_current_std": 0.00010475305547286939,
+            "event_energy_total": 0.0003053775960512502,
+            "modeled_energy": 0.00032244658225642433,
+            "modeled_power_avg": 0.00003224465822564243
+        },
+        "closure_residual": 0.0000010222654872150053,
+        "floor_residual": -7.723712179745077e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.00003053775960512502,
+            "energy_per_period": 0.00003224465822564243,
+            "energy_per_day": 2.7859384706955064,
+            "emeralds": 28.71563777933261
+        },
+        "adv-10s": {
+            "event_energy": 0.00003053775960512502,
+            "energy_per_period": 0.000049313644430816565,
+            "energy_per_day": 0.42606988788225514,
+            "emeralds": 187.76262363349198
+        }
+    }
+}

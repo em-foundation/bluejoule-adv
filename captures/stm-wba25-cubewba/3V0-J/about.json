@@ -1,0 +1,168 @@
+{
+    "id": "bluejoule-adv:stm-wba25-cubewba:3V0-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "stm-wba25-cubewba",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/stm-wba25-cubewba.md",
+        "title": "STMicro STM32WBA25 · STM32CubeWBA",
+        "factoids": [
+            "Board: NUCLEO-WBA25CE1",
+            "MCU: STM32WBA25CEU7",
+            "CPU: 64 MHz Arm Cortex-M33",
+            "Flash: 512 KB",
+            "SRAM: 96 KB",
+            "SDK: STM32CubeWBA 1.9.0",
+            "Benchmark application: BlueJoule-ADV, 1 s advertising interval"
+        ],
+        "references": [
+            {
+                "title": "NUCLEO-WBA25CE1",
+                "url": "https://www.st.com/en/evaluation-tools/nucleo-wba25ce1.html"
+            },
+            {
+                "title": "Board pinout and CAD resources",
+                "url": "https://www.st.com/en/evaluation-tools/nucleo-wba25ce1.html#cad-resources"
+            },
+            {
+                "title": "STM32WBA25CEU7",
+                "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32wba25ce.html"
+            },
+            {
+                "title": "STM32CubeWBA",
+                "url": "https://www.st.com/en/embedded-software/stm32cubewba.html"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "3V0-J",
+        "subtitle": "Bench supply · 3V0",
+        "device": "JS220",
+        "created": "2026-04-16T11:49:27.853Z",
+        "generated": "2026-09-22T16:24:52.914Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 3.0043653576771243,
+            "min": 2.9902992248535156,
+            "max": 3.0098254680633545,
+            "std": 0.0008608588449945258,
+            "droop": 0.01406613282360869
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.00002158240551082839,
+        "energy_std": 2.0775692933395765e-7
+    },
+    "sleep": {
+        "current_avg": 0.0000012813064824893243,
+        "current_std": 5.878735775578463e-7,
+        "power_avg": 0.000003849512808558057
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 1233000,
+            "last_sample_end": 10379250,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 9483000,
+            "sample_width": 500000,
+            "start": 9.483,
+            "end": 9.983,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 733000,
+            "sample_width": 10000000,
+            "start": 0.733,
+            "end": 10.733,
+            "duration": 10,
+            "measured_current_avg": 0.000008336917112251657,
+            "measured_power_avg": 0.000025047144961874484
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.0000012813064824893243,
+            "sleep_current_std": 5.878735775578463e-7,
+            "event_energy_total": 0.00021582405510828392,
+            "modeled_energy": 0.0002504696703853064,
+            "modeled_power_avg": 0.000025046967038530643
+        },
+        "closure_residual": 0.000007103537912653391,
+        "floor_residual": -6.085450906463874e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.00002158240551082839,
+            "energy_per_period": 0.000025046967038530643,
+            "energy_per_day": 2.1640579521290477,
+            "emeralds": 36.96758671425331
+        },
+        "adv-10s": {
+            "event_energy": 0.00002158240551082839,
+            "energy_per_period": 0.000059692582315553155,
+            "energy_per_day": 0.5157439112063793,
+            "emeralds": 155.1157430300468
+        }
+    }
+}

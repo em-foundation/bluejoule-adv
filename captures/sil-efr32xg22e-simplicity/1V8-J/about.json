@@ -1,0 +1,164 @@
+{
+    "id": "bluejoule-adv:sil-efr32xg22e-simplicity:1V8-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "sil-efr32xg22e-simplicity",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/sil-efr32xg22e-simplicity.md",
+        "title": "Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit · Simplicity Studio",
+        "factoids": [
+            "Board: Silicon Labs EFR32xG22E Energy Harvesting Explorer Kit",
+            "MCU: Silicon Labs EFR32xG22E",
+            "CPU: 76.8 MHz Arm Cortex-M33",
+            "Flash: 512 KB",
+            "SRAM: 32 KB",
+            "Development environment: Simplicity Studio",
+            "Simplicity Studio: 5"
+        ],
+        "references": [
+            {
+                "title": "xG22-EK8200A",
+                "url": "https://www.silabs.com/development-tools/wireless/efr32xg22e-energy-harvesting-explorer-kit?tab=overview"
+            },
+            {
+                "title": "EFR32xG22E SoC",
+                "url": "https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs"
+            },
+            {
+                "title": "Simplicity Studio",
+                "url": "https://www.silabs.com/software-and-tools/simplicity-studio/simplicity-studio-version-5"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "1V8-J",
+        "subtitle": "Bench supply · 1V8",
+        "device": "JS220",
+        "created": "2025-10-07T01:37:09.071Z",
+        "generated": "2026-09-22T16:24:48.419Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 1.7979409220507894,
+            "min": 1.7904597520828247,
+            "max": 1.803371548652649,
+            "std": 0.0007842079038153917,
+            "droop": 0.007481169967964663
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.000021877502200146168,
+        "energy_std": 2.2123989340231044e-7
+    },
+    "sleep": {
+        "current_avg": 0.000002697095170824064,
+        "current_std": 0.0000010625681041813323,
+        "power_avg": 0.000004849217778290149
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 1212000,
+            "last_sample_end": 10353000,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 8712000,
+            "sample_width": 500000,
+            "start": 8.712,
+            "end": 9.212,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 712000,
+            "sample_width": 10000000,
+            "start": 0.712,
+            "end": 10.712,
+            "duration": 10,
+            "measured_current_avg": 0.000014595695423094695,
+            "measured_power_avg": 0.000026242198086971363
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.000002697095170824064,
+            "sleep_current_std": 0.0000010625681041813323,
+            "event_energy_total": 0.00021877502200146168,
+            "modeled_energy": 0.000262417982006073,
+            "modeled_power_avg": 0.0000262417982006073
+        },
+        "closure_residual": 0.000015238295311153586,
+        "floor_residual": -3.513866734139882e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.000021877502200146168,
+            "energy_per_period": 0.000026241798200607303,
+            "energy_per_day": 2.267291364532471,
+            "emeralds": 35.28439319773816
+        },
+        "adv-10s": {
+            "event_energy": 0.000021877502200146168,
+            "energy_per_period": 0.00006988475820521864,
+            "energy_per_day": 0.6038043108930891,
+            "emeralds": 132.49325742916892
+        }
+    }
+}

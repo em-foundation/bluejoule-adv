@@ -1,0 +1,168 @@
+{
+    "id": "bluejoule-adv:nrf-52832-emscript:2V7-J",
+    "schema_version": "1",
+    "generator": {
+        "name": "EM•Scope",
+        "version": "26.2.2"
+    },
+    "units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "power": "W",
+        "energy": "J"
+    },
+    "activity": {
+        "moniker": "bluejoule-adv",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/activities/bluejoule-adv.md",
+        "title": "BlueJoule-ADV",
+        "factoids": [
+            "Activity: Bluetooth Low Energy legacy advertising",
+            "Advertising type: non-connectable, non-scannable (`ADV_NONCONN_IND`)",
+            "PHY: LE 1M",
+            "Advertising channels: 37, 38, and 39",
+            "TX power: 0 dBm",
+            "Advertising interval: 1 s",
+            "Advertising payload length: 19 bytes",
+            "Advertising event: one back-to-back transmission on each of channels 37, 38, and 39",
+            "Flags: LE General Discoverable; BR/EDR not supported",
+            "Local name: `BlueJoule`",
+            "Manufacturer ID: Novel Bits (`0x08D3`)",
+            "Manufacturer data: `0xFF`",
+            "Conformance basis: observable over-the-air behavior, not a canonical source implementation",
+            "Measurement result: average event energy and average event duration derived from repeated detected events",
+            "Sleep model: time outside the measured event is treated as sleep for period and daily-energy projections"
+        ],
+        "references": []
+    },
+    "platform": {
+        "moniker": "nrf-52832-emscript",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/platforms/nrf-52832-emscript.md",
+        "title": "Nordic nRF52 DK · EM•Script",
+        "factoids": [
+            "MCU: Nordic nRF52832",
+            "CPU: 64 MHz Arm Cortex-M4",
+            "Flash: 512 KB",
+            "SRAM: 64 KB",
+            "Board: Nordic nRF52 Development Kit",
+            "Software environment: EM•Script",
+            "EM•Script SDK: 26.2.0"
+        ],
+        "references": [
+            {
+                "title": "Nordic nRF52832",
+                "url": "https://www.nordicsemi.com/Products/nRF52832"
+            },
+            {
+                "title": "Nordic nRF52 DK",
+                "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52-DK"
+            },
+            {
+                "title": "Board pinout",
+                "url": "https://github.com/em-foundation/emscope/blob/docs-stable/docs/boards/nrf-52-dk.png"
+            },
+            {
+                "title": "EM•Script project",
+                "url": "https://github.com/em-foundation/emporium"
+            }
+        ]
+    },
+    "power": {
+        "moniker": "bench",
+        "url": "https://github.com/em-foundation/PEDS/blob/main/power/bench.md",
+        "title": "Bench Supply",
+        "factoids": [
+            "Power source: regulated bench supply",
+            "State of charge: not applicable",
+            "Battery model: none"
+        ],
+        "references": []
+    },
+    "capture": {
+        "name": "2V7-J",
+        "subtitle": "Bench supply · 2V7",
+        "device": "JS220",
+        "created": "2025-09-11T01:20:33.464Z",
+        "generated": "2026-09-22T16:24:28.432Z",
+        "duration": 12,
+        "sampling_rate": 1000000,
+        "sample_count": 12000000,
+        "voltage": {
+            "source": "measured",
+            "avg": 2.679181925688351,
+            "min": 2.658313512802124,
+            "max": 2.690579891204834,
+            "std": 0.0016076421461461063,
+            "droop": 0.020868412886227095
+        },
+        "images": [
+            "event-B.png"
+        ]
+    },
+    "events": {
+        "count": 10,
+        "duration_avg": 0.09999999999999999,
+        "duration_std": 1.3877787807814457e-17,
+        "energy_avg": 0.0000226044255000657,
+        "energy_std": 2.6454870570305297e-8
+    },
+    "sleep": {
+        "current_avg": 0.000002478891550356315,
+        "current_std": 0.0001116453906498824,
+        "power_avg": 0.000006641401437456215
+    },
+    "boundary": {
+        "event_window": {
+            "count": 10,
+            "sample_width": 100000,
+            "duration": 0.1,
+            "first_sample_offset": 988750,
+            "last_sample_end": 10089250,
+            "duration_total": 1,
+            "duration_avg": 0.09999999999999999,
+            "duration_std": 1.3877787807814457e-17
+        },
+        "sleep_window": {
+            "sample_offset": 9488750,
+            "sample_width": 500000,
+            "start": 9.48875,
+            "end": 9.98875,
+            "duration": 0.5
+        },
+        "accounting_scope": {
+            "sample_offset": 488750,
+            "sample_width": 10000000,
+            "start": 0.48875,
+            "end": 10.48875,
+            "duration": 10,
+            "measured_current_avg": 0.000010667585953155347,
+            "measured_power_avg": 0.00002858040347642075
+        },
+        "partition": {
+            "event_count": 10,
+            "event_duration_total": 1,
+            "sleep_duration": 9,
+            "sleep_current_avg": 0.000002478891550356315,
+            "sleep_current_std": 0.0001116453906498824,
+            "event_energy_total": 0.000226044255000657,
+            "modeled_energy": 0.00028581686793776294,
+            "modeled_power_avg": 0.000028581686793776292
+        },
+        "closure_residual": 0.000044902002751723035,
+        "floor_residual": -6.38163858822807e-8
+    },
+    "projections": {
+        "adv-1s": {
+            "event_energy": 0.0000226044255000657,
+            "energy_per_period": 0.000028581686793776292,
+            "energy_per_day": 2.4694577389822716,
+            "emeralds": 32.39577609980485
+        },
+        "adv-10s": {
+            "event_energy": 0.0000226044255000657,
+            "energy_per_period": 0.00008835429973088223,
+            "energy_per_day": 0.7633811496748224,
+            "emeralds": 104.79692881344741
+        }
+    }
+}
