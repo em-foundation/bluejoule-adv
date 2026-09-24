@@ -10,24 +10,24 @@ Public presentation, comparisons, and leaderboards belong at **bluejoule.org**.
 
 A conforming implementation shall transmit one legacy BLE advertising event with the following parameters:
 
-| Parameter | Requirement |
-|---|---|
-| Advertising type | Non-connectable, non-scannable (`ADV_NONCONN_IND`) |
-| PHY | LE 1M |
-| Advertising channels | 37, 38, and 39 |
-| TX power | 0 dBm |
-| Advertising interval | 1 s |
-| Advertising payload | 19 bytes |
+| Parameter            | Requirement                                        |
+| -------------------- | -------------------------------------------------- |
+| Advertising type     | Non-connectable, non-scannable (`ADV_NONCONN_IND`) |
+| PHY                  | LE 1M                                              |
+| Advertising channels | 37, 38, and 39                                     |
+| TX power             | 0 dBm                                              |
+| Advertising interval | 1 s                                                |
+| Advertising payload  | 19 bytes                                           |
 
 The three channel transmissions occur back-to-back as one advertising event.
 
 ### Advertising Payload
 
-| Len | Type | Data | Meaning |
-|---:|---:|---|---|
-| `02` | `01` | `06` | Flags — LE General Discoverable; BR/EDR not supported |
-| `0A` | `08` | `42 6C 75 65 4A 6F 75 6C 65` | Shortened local name — `BlueJoule` |
-| `04` | `FF` | `D3 08 FF` | Manufacturer data — Novel Bits (`0x08D3`), data `0xFF` |
+|  Len | Type | Data                         | Meaning                                                |
+| ---: | ---: | ---------------------------- | ------------------------------------------------------ |
+| `02` | `01` | `06`                         | Flags — LE General Discoverable; BR/EDR not supported  |
+| `0A` | `08` | `42 6C 75 65 4A 6F 75 6C 65` | Shortened local name — `BlueJoule`                     |
+| `04` | `FF` | `D3 08 FF`                   | Manufacturer data — Novel Bits (`0x08D3`), data `0xFF` |
 
 The benchmark is defined by this observable behavior, not by a single canonical source implementation. Published platform implementations may be consulted as concrete examples.
 
