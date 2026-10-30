@@ -123,3 +123,11 @@ emscope pack -u -C
 ```
 
 This allows contributors to fetch capture data only when needed.
+
+## Citation
+
+This dataset is archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23781457.svg)](https://doi.org/10.5281/zenodo.23781457)
+
+The DOI above always resolves to the latest archived release. To cite release 26.09:
+
+> Frankel, B., & Afaneh, M. (2026). BlueJoule advertising benchmark, release 26.09 (Version 26.09) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.23781458
